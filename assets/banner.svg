@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="900" height="240" role="img" aria-label="Astoris — low-level programmer">
+  
+  <defs>
+    <clipPath id="typemask">
+      <rect x="40" y="70" width="0" height="70"></rect>
+    </clipPath>
+  </defs>
+
+  
+  <rect class="bg-r" width="900" height="240" fill="#f4f0e8"></rect>
+
+  
+  <text x="40" y="48" class="mono faded kicker">※ astorisTheBrave · profile · 2026</text>
+
+  
+  <g clip-path="url(#typemask)">
+    <text x="40" y="135" class="serif ink display">Hey, I&#39;m Astoris.</text>
+  </g>
+
+  
+  <circle class="accent dot" cx="545" cy="122" r="5"></circle>
+
+  
+  <line class="line-s hair" x1="40" y1="168" x2="860" y2="168" stroke-width="1"></line>
+
+  
+  <g class="prompt">
+    <text x="40" y="202" class="mono tagline">
+      <tspan class="accent" font-weight="600">~/astoris</tspan><tspan class="faded" dx="8">$</tspan><tspan class="muted" dx="8">whoami</tspan><tspan class="ink" dx="14">low-level programmer · mild procrastination habit</tspan><tspan class="caret accent" dx="4">█</tspan>
+    </text>
+  </g>
+
+  
+  <g stroke-width="1" class="line-s" fill="none">
+    <path d="M20 20 L28 20 L28 12"></path>
+    <path d="M880 20 L872 20 L872 12"></path>
+    <path d="M20 220 L28 220 L28 228"></path>
+    <path d="M880 220 L872 220 L872 228"></path>
+  </g>
+</svg>

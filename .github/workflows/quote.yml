@@ -1,0 +1,61 @@
+name: quote
+
+on:
+  schedule:
+    # 07:00 UTC daily
+    - cron: "0 7 * * *"
+  workflow_dispatch:
+
+jobs:
+  rotate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: pick today's quote
+        id: pick
+        run: |
+          # a small, curated pool — keep it on-brand: engineers, minimalists, honest programs.
+          QUOTES=(
+            "Simplicity is prerequisite for reliability.|Edsger W. Dijkstra"
+            "The purpose of computing is insight, not numbers.|Richard Hamming"
+            "The competent programmer is fully aware of the limited size of his own skull.|Edsger W. Dijkstra"
+            "Premature optimization is the root of all evil.|Donald Knuth"
+            "Walking on water and developing software from a specification are easy if both are frozen.|Edward V. Berard"
+            "It is practically impossible to teach good programming to students that have had a prior exposure to BASIC.|Edsger W. Dijkstra"
+            "Controlling complexity is the essence of computer programming.|Brian Kernighan"
+            "Make it work, make it right, make it fast.|Kent Beck"
+            "Programs must be written for people to read, and only incidentally for machines to execute.|Harold Abelson"
+            "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.|Martin Fowler"
+            "A ship in port is safe, but that's not what ships are built for.|Grace Hopper"
+            "Fewer layers. Closer to the metal. Honest programs.|Astoris"
+          )
+          DAY=$(date +%j)
+          IDX=$(( 10#$DAY % ${#QUOTES[@]} ))
+          LINE="${QUOTES[$IDX]}"
+          QUOTE="${LINE%%|*}"
+          AUTHOR="${LINE##*|}"
+          echo "quote=$QUOTE"   >> $GITHUB_OUTPUT
+          echo "author=$AUTHOR" >> $GITHUB_OUTPUT
+
+      - name: write into README
+        run: |
+          QUOTE="${{ steps.pick.outputs.quote }}"
+          AUTHOR="${{ steps.pick.outputs.author }}"
+          python3 <<PY
+          import re
+          p = open("README.md").read()
+          block = f'<!-- QUOTE:START -->\n> _"${QUOTE}"_ — **${AUTHOR}**\n<!-- QUOTE:END -->'
+          p2 = re.sub(r'<!-- QUOTE:START -->.*?<!-- QUOTE:END -->', block, p, flags=re.S)
+          open("README.md","w").write(p2)
+          PY
+
+      - name: commit
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --staged --quiet || git commit -m "chore(quote): rotate"
+          git push
