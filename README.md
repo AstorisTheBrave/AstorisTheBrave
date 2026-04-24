@@ -143,7 +143,7 @@ avoiding  →  anything with a framework in the name
 ### <sub><code>07 · QUOTE, DAILY</code></sub>
 
 <!-- QUOTE:START -->
-> _"Simplicity is prerequisite for reliability."_ — **Edsger W. Dijkstra**
+> _"Controlling complexity is the essence of computer programming."_ — **Brian Kernighan**
 <!-- QUOTE:END -->
 
 <br/>
