@@ -143,7 +143,7 @@ avoiding  →  anything with a framework in the name
 ### <sub><code>07 · QUOTE, DAILY</code></sub>
 
 <!-- QUOTE:START -->
-> _"Controlling complexity is the essence of computer programming."_ — **Brian Kernighan**
+> _"Make it work, make it right, make it fast."_ — **Kent Beck**
 <!-- QUOTE:END -->
 
 <br/>
