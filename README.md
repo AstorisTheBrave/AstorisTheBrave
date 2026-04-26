@@ -97,8 +97,8 @@ avoiding  ->  ORMs that hide what the query is doing
 </td>
 <td valign="top">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=AstorisTheBrave&layout=compact&hide_border=true&bg_color=07070a&title_color=e27a52&text_color=ece7dc&langs_count=8" />
-    <img alt="langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AstorisTheBrave&layout=compact&hide_border=true&bg_color=f4f0e8&title_color=c24e2c&text_color=1a1a1a&langs_count=8" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=AstorisTheBrave&layout=compact&hide_border=true&count_private=true&bg_color=07070a&title_color=e27a52&text_color=ece7dc&langs_count=8" />
+    <img alt="langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AstorisTheBrave&layout=compact&hide_border=true&count_private=true&bg_color=f4f0e8&title_color=c24e2c&text_color=1a1a1a&langs_count=8" />
   </picture>
 </td>
 </tr></table>
