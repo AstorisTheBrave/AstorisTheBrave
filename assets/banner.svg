@@ -1,37 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="900" height="240" role="img" aria-label="Astoris — low-level programmer">
-  
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="900" height="240" role="img" aria-label="Astoris - backend developer">
+
+  <style>
+    /* palette */
+    .bg-r   { fill: #f4f0e8; }
+    .ink    { fill: #1a1a1a; }
+    .faded  { fill: #928d84; }
+    .muted  { fill: #5e5a54; }
+    .accent { fill: #c24e2c; }
+    .line-s { stroke: #d9d3c6; fill: none; }
+
+    /* type */
+    .mono    { font-family: ui-monospace, 'Cascadia Code', 'Fira Mono', monospace; }
+    .serif   { font-family: Georgia, 'Times New Roman', serif; }
+    .kicker  { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; }
+    .display { font-size: 52px; font-weight: 400; letter-spacing: -0.02em; }
+    .tagline { font-size: 13px; }
+
+    /* typewriter reveal */
+    @keyframes type-in {
+      from { width: 0px; }
+      to   { width: 560px; }
+    }
+    #typemask rect {
+      animation: type-in 1.8s steps(22, end) 0.3s both;
+    }
+  </style>
+
   <defs>
     <clipPath id="typemask">
       <rect x="40" y="70" width="0" height="70"></rect>
     </clipPath>
   </defs>
 
-  
+  <!-- background -->
   <rect class="bg-r" width="900" height="240" fill="#f4f0e8"></rect>
 
-  
+  <!-- kicker -->
   <text x="40" y="48" class="mono faded kicker">※ astorisTheBrave · profile · 2026</text>
 
-  
+  <!-- headline (typewriter clipped) -->
   <g clip-path="url(#typemask)">
-    <text x="40" y="135" class="serif ink display">Hey, I&#39;m Astoris.</text>
+    <text x="40" y="135" class="serif ink display">Hey, I'm Astoris.</text>
   </g>
 
-  
+  <!-- accent dot -->
   <circle class="accent dot" cx="545" cy="122" r="5"></circle>
 
-  
+  <!-- rule -->
   <line class="line-s hair" x1="40" y1="168" x2="860" y2="168" stroke-width="1"></line>
 
-  
+  <!-- prompt line -->
   <g class="prompt">
     <text x="40" y="202" class="mono tagline">
-      <tspan class="accent" font-weight="600">~/astoris</tspan><tspan class="faded" dx="8">$</tspan><tspan class="muted" dx="8">whoami</tspan><tspan class="ink" dx="14">low-level programmer · mild procrastination habit</tspan><tspan class="caret accent" dx="4">█</tspan>
+      <tspan class="accent" font-weight="600">~/astoris</tspan><tspan class="faded" dx="8">$</tspan><tspan class="muted" dx="8">whoami</tspan><tspan class="ink" dx="14">backend developer · building things that stay up</tspan><tspan class="accent" dx="4">█</tspan>
     </text>
   </g>
 
-  
+  <!-- corner marks -->
   <g stroke-width="1" class="line-s" fill="none">
     <path d="M20 20 L28 20 L28 12"></path>
     <path d="M880 20 L872 20 L872 12"></path>
