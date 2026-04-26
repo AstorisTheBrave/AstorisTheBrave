@@ -4,9 +4,33 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>Astoris · profile README preview</title>
-<link rel="stylesheet" href="../colors_and_type.css"/>
 <style>
-  :root { color-scheme: light dark; }
+  /* ── design tokens ─────────────────────────────────────────── */
+  :root {
+    color-scheme: light dark;
+    --bg:        #f4f0e8;
+    --bg-elev:   #ece7dc;
+    --ink:       #1a1a1a;
+    --ink-faded: #928d84;
+    --ink-muted: #5e5a54;
+    --line:      #d9d3c6;
+    --accent:    #c24e2c;
+    --font-mono: ui-monospace, 'Cascadia Code', 'Fira Mono', monospace;
+    --font-serif: Georgia, 'Times New Roman', serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:        #07070a;
+      --bg-elev:   #1f1d1a;
+      --ink:       #ece7dc;
+      --ink-faded: #6b6760;
+      --ink-muted: #a8a49b;
+      --line:      #2a2724;
+      --accent:    #e27a52;
+    }
+  }
+
+  /* ── base ──────────────────────────────────────────────────── */
   html,body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-mono);font-size:14px;line-height:1.65}
   .chrome{position:sticky;top:0;z-index:10;background:var(--bg-elev);border-bottom:1px solid var(--line);padding:10px 20px;display:flex;gap:14px;align-items:center;font-size:12px}
   .chrome .dot{width:10px;height:10px;border-radius:999px;background:var(--line)}
@@ -32,8 +56,8 @@
   .gh-like details[open]{border-color:var(--accent)}
   .gh-like summary{cursor:pointer;list-style:none;color:var(--ink-muted)}
   .gh-like summary::-webkit-details-marker{display:none}
-  .gh-like summary::before{content:'▸ ';color:var(--accent);margin-right:4px}
-  .gh-like details[open] summary::before{content:'▾ '}
+  .gh-like summary::before{content:'\25B8 ';color:var(--accent);margin-right:4px}
+  .gh-like details[open] summary::before{content:'\25BE '}
   .banner{text-align:center;margin:0 0 12px}
   .badges{text-align:center;margin:0 0 32px;display:flex;gap:6px;justify-content:center;flex-wrap:wrap}
   .note{position:fixed;right:20px;bottom:20px;max-width:280px;background:var(--bg-elev);border:1px solid var(--line);border-radius:6px;padding:12px 14px;font-size:11px;color:var(--ink-faded);line-height:1.5}
@@ -47,7 +71,7 @@
   <span class="dot" style="background:#8ca87a"></span>
   <span class="title">github.com/AstorisTheBrave · README preview</span>
   <span class="spc"></span>
-  <button onclick="document.documentElement.style.colorScheme=document.documentElement.style.colorScheme==='dark'?'light':'dark'">toggle theme</button>
+  <button onclick="(function(){var h=document.documentElement,c=h.style.colorScheme;h.style.colorScheme=c==='dark'?'light':'dark';})()">toggle theme</button>
 </div>
 
 <div class="wrap gh-like">
@@ -56,36 +80,36 @@
   <p class="badges">
     <img alt="site" src="https://img.shields.io/badge/site-astoris.dev-c24e2c?style=flat-square&labelColor=1a1a1a"/>
     <img alt="focus" src="https://img.shields.io/badge/%F0%9F%8E%AF-focusing-1a1a1a?style=flat-square&labelColor=ece7dc"/>
-    <img alt="mail" src="https://img.shields.io/badge/mail-astoris%40example.com-5e5a54?style=flat-square&labelColor=f4f0e8"/>
+    <img alt="mail" src="https://img.shields.io/badge/mail-AstorisTheBrave%40proton.me-5e5a54?style=flat-square&labelColor=f4f0e8"/>
     <img alt="tz" src="https://img.shields.io/badge/UTC-%2B5-928d84?style=flat-square&labelColor=f4f0e8"/>
   </p>
 
   <h3><sub><code>01 · ABOUT</code></sub></h3>
   <table><tr>
     <td width="55%">
-      <blockquote>"Low-level programmer with a mild procrastination habit.<br/>I like small, sharp programs, the weird corners of languages, and things that compile to <strong>exactly what you wrote</strong>."</blockquote>
-      <p>I'm <strong>Astoris</strong> — I spend most of my time reading other people's source and poking at the weird corners of languages. Fewer layers. Closer to the metal. Honest programs.</p>
-      <p>Not shipping anything loud yet — more forks, more notebooks, more tabs left open overnight.</p>
+      <blockquote>"Backend developer with a mild procrastination habit.<br/>I like systems that stay up, APIs that say what they do, and code that runs the same in prod as it does locally."</blockquote>
+      <p>I'm <strong>Astoris</strong> - I build backends. APIs, databases, and the plumbing that connects services together. A lot of my time goes into reading other people's code, staring at query plans, and taking notes I'll never find again.</p>
+      <p>Not shipping anything loud right now - more side projects, more reading, more tabs left open overnight.</p>
     </td>
     <td width="45%"><img src="assets/whoami.svg" alt=""/></td>
   </tr></table>
 
   <h3><sub><code>02 · /NOW</code></sub></h3>
-<pre><code>reading   →  claude-code source
-poking    →  symbolic regression in mathematica
-building  →  permanent-portfolio · astoris.dev
-avoiding  →  anything with a framework in the name</code></pre>
-  <p><sub><em>last edited by hand — /now is a ritual, not a feed.</em></sub></p>
+<pre><code>reading   ->  designing data-intensive applications
+building  ->  astoris.dev + a side project in Go
+exploring ->  event sourcing and CQRS patterns
+avoiding  ->  ORMs that hide what the query is doing</code></pre>
+  <p><sub><em>last edited by hand - /now is a ritual, not a feed.</em></sub></p>
 
   <h3><sub><code>03 · THE STACK I REACH FOR</code></sub></h3>
   <p class="badges" style="justify-content:flex-start;margin-bottom:8px">
-    <img src="https://img.shields.io/badge/C-1a1a1a?style=flat-square&logo=c&logoColor=f4f0e8"/>
     <img src="https://img.shields.io/badge/rust-c24e2c?style=flat-square&logo=rust&logoColor=f4f0e8"/>
-    <img src="https://img.shields.io/badge/zig-1a1a1a?style=flat-square&logo=zig&logoColor=f4f0e8"/>
-    <img src="https://img.shields.io/badge/asm-5e5a54?style=flat-square&logoColor=f4f0e8"/>
+    <img src="https://img.shields.io/badge/go-1a1a1a?style=flat-square&logo=go&logoColor=f4f0e8"/>
+    <img src="https://img.shields.io/badge/C-1a1a1a?style=flat-square&logo=c&logoColor=f4f0e8"/>
     <img src="https://img.shields.io/badge/typescript-1a1a1a?style=flat-square&logo=typescript&logoColor=f4f0e8"/>
-    <img src="https://img.shields.io/badge/vite-1a1a1a?style=flat-square&logo=vite&logoColor=f4f0e8"/>
-    <img src="https://img.shields.io/badge/mathematica-5e5a54?style=flat-square&logo=wolframmathematica&logoColor=f4f0e8"/>
+    <img src="https://img.shields.io/badge/postgresql-1a1a1a?style=flat-square&logo=postgresql&logoColor=f4f0e8"/>
+    <img src="https://img.shields.io/badge/redis-5e5a54?style=flat-square&logo=redis&logoColor=f4f0e8"/>
+    <img src="https://img.shields.io/badge/docker-1a1a1a?style=flat-square&logo=docker&logoColor=f4f0e8"/>
     <img src="https://img.shields.io/badge/neovim-1a1a1a?style=flat-square&logo=neovim&logoColor=f4f0e8"/>
     <img src="https://img.shields.io/badge/linux-5e5a54?style=flat-square&logo=linux&logoColor=f4f0e8"/>
     <img src="https://img.shields.io/badge/git-c24e2c?style=flat-square&logo=git&logoColor=f4f0e8"/>
@@ -100,44 +124,43 @@ avoiding  →  anything with a framework in the name</code></pre>
   <h3><sub><code>05 · A SNAKE, EATING MY CONTRIBUTIONS</code></sub></h3>
   <p style="text-align:center;border:1px dashed var(--line);padding:40px;border-radius:6px;color:var(--ink-faded);font-size:12px">
     ※ snake SVG appears here after the first <code>snake.yml</code> Action run.<br/>
-    <sub>(preview placeholder — actual image lives at <code>github.com/.../output/github-snake.svg</code>)</sub>
+    <sub>(preview placeholder - actual image lives at <code>github.com/.../output/github-snake.svg</code>)</sub>
   </p>
 
-  <h3><sub><code>06 · PLAYING RIGHT NOW</code></sub></h3>
-  <p><em>— nothing playing. probably deep in a man page. —</em></p>
+  <h3><sub><code>06 · QUOTE, DAILY</code></sub></h3>
+  <blockquote>"Programs must be written for people to read, and only incidentally for machines to execute." - <strong>Harold Abelson</strong></blockquote>
 
-  <h3><sub><code>07 · QUOTE, DAILY</code></sub></h3>
-  <blockquote>"Simplicity is prerequisite for reliability." — <strong>Edsger W. Dijkstra</strong></blockquote>
-
-  <h3><sub><code>08 · HIDDEN</code></sub></h3>
+  <h3><sub><code>07 · HIDDEN</code></sub></h3>
   <details><summary><sub><code>$ cat .bashrc | tail -n 1</code></sub></summary>
     <pre><code>alias plz='sudo $(fc -ln -1)'</code></pre>
     <p><sub>you scrolled this far. here's a second one:</sub></p>
-    <pre><code>function cd() { builtin cd "$@" && ls; }
+    <pre><code>function cd() { builtin cd "$@" &amp;&amp; ls; }
 # small, sharp, quiet. like the rest of this readme.</code></pre>
   </details>
   <details><summary><sub><code>$ man astoris</code></sub></summary>
 <pre><code>NAME
-      astoris — low-level programmer, mild procrastination habit
+      astoris - backend developer, mild procrastination habit
 
 SYNOPSIS
-      astoris [--reading &lt;source&gt;] [--poking &lt;language&gt;]
-              [--avoiding &lt;framework&gt;] [--shipping? no]
+      astoris [--building &lt;service&gt;] [--debugging &lt;query&gt;]
+              [--avoiding &lt;orm&gt;] [--shipping? eventually]
 
 DESCRIPTION
-      A small, sharp program. Takes longer than estimated.
-      Produces honest output. No telemetry. No ceremony.
+      Builds backends. APIs, databases, and the pipes between them.
+      Takes longer than estimated. Produces honest output.
+      No unnecessary abstractions. No ceremony.
 
 FILES
       ~/astoris/permanent-portfolio    the canonical site
-      ~/astoris/.config/philosophy.md  fewer layers
-      ~/astoris/.config/signoff.md     hand-written HTML &amp; opinions
+      ~/astoris/.config/philosophy.md  keep it boring in prod
+      ~/astoris/.config/api-design.md  say what you do, do what you say
 
 BUGS
       procrastinates. see ISSUES.md (eventually).
+      occasionally over-indexes on query optimization.
 
 SEE ALSO
-      astoris.dev(7), github(7), coffee(1)</code></pre>
+      astoris.dev(7), postgresql(1), github(7), coffee(1)</code></pre>
   </details>
   <details><summary><sub><code>$ ./easter-egg --verbose</code></sub></summary>
 <pre><code>             ╭──────────────────────────────╮
@@ -148,9 +171,9 @@ SEE ALSO
              │     (yes, 01 in binary.      │
              │      low-level joke.)        │
              │                              │
-             │     — astoris                │
+             │     - astoris                │
              ╰──────────────────────────────╯</code></pre>
-    <p><sub>drop me a line: <code>astoris@example.com</code> — subject line <code>0b1</code> for priority.</sub></p>
+    <p><sub>drop me a line: <a href="mailto:AstorisTheBrave@proton.me">AstorisTheBrave@proton.me</a> - subject line <code>0b1</code> for priority.</sub></p>
   </details>
 
   <p style="text-align:center;margin-top:56px"><sub><code>※</code> &nbsp; hand-written HTML &amp; opinions &nbsp;·&nbsp; no trackers &nbsp;·&nbsp; <a href="https://astoris.dev">astoris.dev</a></sub></p>
@@ -159,9 +182,8 @@ SEE ALSO
 
 <aside class="note">
   <b>preview note</b>
-  This is a faithful local preview of how the README will render on
-  github.com. Click <em>toggle theme</em> to see the dark-mode swap —
-  all SVGs and stat cards are <code>prefers-color-scheme</code>-aware.
+  Faithful local preview of how the README renders on github.com.
+  Click <em>toggle theme</em> to see the dark-mode swap.
   The snake block is a placeholder until the Action runs once.
 </aside>
 
