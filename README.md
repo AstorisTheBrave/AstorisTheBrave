@@ -87,23 +87,27 @@ avoiding  ->  ORMs that hide what the query is doing
 
 ### <sub><code>04 · STATS, LIVE</code></sub>
 
-<p>
-  <!-- theme-aware stats: light & dark via prefers-color-scheme -->
+<!-- stats + langs side by side -->
+<table width="100%" border="0"><tr>
+<td valign="top">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=AstorisTheBrave&show_icons=true&hide_border=true&bg_color=07070a&title_color=e27a52&icon_color=e27a52&text_color=ece7dc&include_all_commits=true&count_private=true" />
     <img alt="stats" src="https://github-readme-stats.vercel.app/api?username=AstorisTheBrave&show_icons=true&hide_border=true&bg_color=f4f0e8&title_color=c24e2c&icon_color=c24e2c&text_color=1a1a1a&include_all_commits=true&count_private=true" />
   </picture>
-</p>
-<p>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=AstorisTheBrave&hide_border=true&background=07070a&stroke=1f1d1a&ring=e27a52&fire=e27a52&currStreakLabel=e27a52&sideLabels=a8a49b&currStreakNum=ece7dc&sideNums=ece7dc&dates=6b6760" />
-    <img alt="streak" src="https://github-readme-streak-stats.herokuapp.com/?user=AstorisTheBrave&hide_border=true&background=f4f0e8&stroke=d9d3c6&ring=c24e2c&fire=c24e2c&currStreakLabel=c24e2c&sideLabels=5e5a54&currStreakNum=1a1a1a&sideNums=1a1a1a&dates=928d84" />
-  </picture>
-</p>
-<p>
+</td>
+<td valign="top">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=AstorisTheBrave&layout=compact&hide_border=true&bg_color=07070a&title_color=e27a52&text_color=ece7dc&langs_count=8" />
     <img alt="langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AstorisTheBrave&layout=compact&hide_border=true&bg_color=f4f0e8&title_color=c24e2c&text_color=1a1a1a&langs_count=8" />
+  </picture>
+</td>
+</tr></table>
+
+<!-- streak full width -->
+<p>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=AstorisTheBrave&hide_border=true&background=07070a&stroke=1f1d1a&ring=e27a52&fire=e27a52&currStreakLabel=e27a52&sideLabels=a8a49b&currStreakNum=ece7dc&sideNums=ece7dc&dates=6b6760" />
+    <img alt="streak" src="https://streak-stats.demolab.com/?user=AstorisTheBrave&hide_border=true&background=f4f0e8&stroke=d9d3c6&ring=c24e2c&fire=c24e2c&currStreakLabel=c24e2c&sideLabels=5e5a54&currStreakNum=1a1a1a&sideNums=1a1a1a&dates=928d84" />
   </picture>
 </p>
 
@@ -124,9 +128,34 @@ avoiding  ->  ORMs that hide what the query is doing
 
 <br/>
 
-<!-- ── 06 · quote - rotated daily by Action ────────────────────────────── -->
+<!-- ── 06 · projects ───────────────────────────────────────────────────── -->
 
-### <sub><code>06 · QUOTE, DAILY</code></sub>
+### <sub><code>06 · PROJECTS</code></sub>
+
+<table width="100%" border="0">
+<tr>
+<td valign="top" width="50%">
+
+**[eml-visualiser](https://github.com/AstorisTheBrave/eml-visualiser)** &nbsp; <sub>`javascript`</sub>
+
+Renders elementary functions as EML binary trees, based on Odrzywolek's 2025 paper. The interesting part is the parsing and tree layout, not the UI.
+
+</td>
+<td valign="top" width="50%">
+
+**[CIT - Cascade Impact Trace](https://github.com/AstorisTheBrave/CIT-Cascade-Impact-Trace-for-Claude)** &nbsp; <sub>`tooling`</sub>
+
+Claude skills that map the full blast radius of any change before you make it. Works on Claude Desktop, claude.ai, and Claude Code.
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<!-- ── 07 · quote - rotated weekly by Action ───────────────────────────── -->
+
+### <sub><code>07 · QUOTE, WEEKLY</code></sub>
 
 <!-- QUOTE:START -->
 > _"Programs must be written for people to read, and only incidentally for machines to execute."_ - **Harold Abelson**
@@ -134,9 +163,9 @@ avoiding  ->  ORMs that hide what the query is doing
 
 <br/>
 
-<!-- ── 07 · hidden ─────────────────────────────────────────────────────── -->
+<!-- ── 08 · hidden ─────────────────────────────────────────────────────── -->
 
-### <sub><code>07 · HIDDEN</code></sub>
+### <sub><code>08 · HIDDEN</code></sub>
 
 <details>
   <summary><sub><code>$ cat .bashrc | tail -n 1</code></sub></summary>
@@ -201,7 +230,7 @@ avoiding  ->  ORMs that hide what the query is doing
 
 <br/>
 
-<!-- ── 08 · sign-off ───────────────────────────────────────────────────── -->
+<!-- ── 09 · sign-off ───────────────────────────────────────────────────── -->
 
 <p align="center">
   <sub>
