@@ -87,7 +87,6 @@ avoiding  ->  ORMs that hide what the query is doing
 
 ### <sub><code>04 · STATS, LIVE</code></sub>
 
-<!-- stats + langs side by side -->
 <table width="100%" border="0"><tr>
 <td valign="top">
   <picture>
@@ -97,13 +96,12 @@ avoiding  ->  ORMs that hide what the query is doing
 </td>
 <td valign="top">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=AstorisTheBrave&layout=compact&hide_border=true&count_private=true&bg_color=07070a&title_color=e27a52&text_color=ece7dc&langs_count=8" />
-    <img alt="langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AstorisTheBrave&layout=compact&hide_border=true&count_private=true&bg_color=f4f0e8&title_color=c24e2c&text_color=1a1a1a&langs_count=8" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=AstorisTheBrave&layout=compact&hide_border=true&bg_color=07070a&title_color=e27a52&text_color=ece7dc&langs_count=8&count_private=true" />
+    <img alt="langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AstorisTheBrave&layout=compact&hide_border=true&bg_color=f4f0e8&title_color=c24e2c&text_color=1a1a1a&langs_count=8&count_private=true" />
   </picture>
 </td>
 </tr></table>
 
-<!-- streak full width -->
 <p>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=AstorisTheBrave&hide_border=true&background=07070a&stroke=1f1d1a&ring=e27a52&fire=e27a52&currStreakLabel=e27a52&sideLabels=a8a49b&currStreakNum=ece7dc&sideNums=ece7dc&dates=6b6760" />
@@ -136,11 +134,52 @@ avoiding  ->  ORMs that hide what the query is doing
 <tr>
 <td valign="top" width="50%">
 
-**[eml-visualiser](https://github.com/AstorisTheBrave/eml-visualiser)** &nbsp; <sub>`javascript`</sub>
+**[tcp-echo](https://github.com/AstorisTheBrave/tcp-echo)** &nbsp; <sub>`C`</sub>
+
+Raw TCP echo server using POSIX sockets. No threads, no libraries. The smallest useful thing you can build with `socket` / `bind` / `listen` / `accept`.
+
+</td>
+<td valign="top" width="50%">
+
+**[todo-api](https://github.com/AstorisTheBrave/todo-api)** &nbsp; <sub>`TypeScript`</sub>
+
+REST CRUD API on Node's built-in `http` module. No Express, no Fastify. Manual routing, typed store, streaming body reads.
+
+</td>
+</tr>
+<tr>
+<td valign="top" width="50%">
+
+**[url-shortener](https://github.com/AstorisTheBrave/url-shortener)** &nbsp; <sub>`Go`</sub>
+
+URL shortener in three files. Shorten, redirect, persist slugs to JSON between restarts. Uses `crypto/rand` for unguessable slugs.
+
+</td>
+<td valign="top" width="50%">
+
+**[rate-limiter](https://github.com/AstorisTheBrave/rate-limiter)** &nbsp; <sub>`Go`</sub>
+
+Token bucket rate limiter as a standalone library with `http.Handler` middleware and unit tests. Composes with any Go HTTP server.
+
+</td>
+</tr>
+<tr>
+<td valign="top" width="50%">
+
+**[pubsub-broker](https://github.com/AstorisTheBrave/pubsub-broker)** &nbsp; <sub>`Go`</sub>
+
+TCP pub/sub broker. `SUB` / `PUB` / `UNSUB` over plain text. One goroutine per client, `sync.RWMutex` on the topic map, buffered send channels.
+
+</td>
+<td valign="top" width="50%">
+
+**[eml-visualiser](https://github.com/AstorisTheBrave/eml-visualiser)** &nbsp; <sub>`JavaScript`</sub>
 
 Renders elementary functions as EML binary trees, based on Odrzywolek's 2025 paper. The interesting part is the parsing and tree layout, not the UI.
 
 </td>
+</tr>
+<tr>
 <td valign="top" width="50%">
 
 **[CIT - Cascade Impact Trace](https://github.com/AstorisTheBrave/CIT-Cascade-Impact-Trace-for-Claude)** &nbsp; <sub>`tooling`</sub>
@@ -148,6 +187,7 @@ Renders elementary functions as EML binary trees, based on Odrzywolek's 2025 pap
 Claude skills that map the full blast radius of any change before you make it. Works on Claude Desktop, claude.ai, and Claude Code.
 
 </td>
+<td valign="top" width="50%"></td>
 </tr>
 </table>
 
