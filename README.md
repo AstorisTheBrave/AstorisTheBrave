@@ -1,24 +1,24 @@
 <!-- ─────────────────────────────────────────────────────────────────────────
-  astoris — profile readme
+  astoris - profile readme
   paper & ink · rust accent · no ceremony
-  edit the // NOW // block and the featured-projects block as life happens.
+  edit the // NOW // block as life changes.
   everything else is self-updating via Actions (see .github/workflows/).
   ───────────────────────────────────────────────────────────────────────── -->
 
 <p align="center">
-  <img src="./assets/banner.svg" alt="Hey, I'm Astoris — low-level programmer" width="900" />
+  <img src="./assets/banner.svg" alt="Hey, I'm Astoris - backend developer" width="900" />
 </p>
 
 <p align="center">
   <a href="https://astoris.dev"><img alt="site" src="https://img.shields.io/badge/site-astoris.dev-c24e2c?style=flat-square&labelColor=1a1a1a"/></a>
   <img alt="focus" src="https://img.shields.io/badge/%F0%9F%8E%AF-focusing-1a1a1a?style=flat-square&labelColor=ece7dc"/>
-  <a href="mailto:astoris@example.com"><img alt="mail" src="https://img.shields.io/badge/mail-astoris%40example.com-5e5a54?style=flat-square&labelColor=f4f0e8"/></a>
+  <a href="mailto:AstorisTheBrave@proton.me"><img alt="mail" src="https://img.shields.io/badge/mail-AstorisTheBrave%40proton.me-5e5a54?style=flat-square&labelColor=f4f0e8"/></a>
   <img alt="timezone" src="https://img.shields.io/badge/UTC-%2B5-928d84?style=flat-square&labelColor=f4f0e8"/>
 </p>
 
 <br/>
 
-<!-- ── 01 · whoami ─────────────────────────────────────────────────────── -->
+<!-- ── 01 · about ─────────────────────────────────────────────────────── -->
 
 <table width="100%" border="0">
 <tr>
@@ -26,21 +26,18 @@
 
 ### <sub><code>01 · ABOUT</code></sub>
 
-> _"Low-level programmer with a mild procrastination habit.<br/>
-> I like small, sharp programs, the weird corners of languages,<br/>
-> and things that compile to **exactly what you wrote**."_
+> _"Backend developer with a mild procrastination habit.<br/>
+> I like systems that stay up, APIs that say what they do,<br/>
+> and code that runs the same in prod as it does locally."_
 
-I'm **Astoris** — I spend most of my time reading other people's source
-and poking at the weird corners of languages. Fewer layers. Closer to
-the metal. Honest programs.
+I'm **Astoris** - I build backends. APIs, databases, and the plumbing that connects services together. A lot of my time goes into reading other people's code, staring at query plans, and taking notes I'll never find again.
 
-Not shipping anything loud yet — more forks, more notebooks, more tabs
-left open overnight.
+Not shipping anything loud right now - more side projects, more reading, more tabs left open overnight.
 
 </td>
 <td valign="top" width="45%">
 
-<img src="./assets/whoami.svg" alt="whoami — terminal session" width="100%" />
+<img src="./assets/whoami.svg" alt="whoami - terminal session" width="100%" />
 
 </td>
 </tr>
@@ -54,14 +51,14 @@ left open overnight.
 
 <!-- NOW:START -->
 ```txt
-reading   →  claude-code source
-poking    →  symbolic regression in mathematica
-building  →  permanent-portfolio · astoris.dev
-avoiding  →  anything with a framework in the name
+reading   ->  designing data-intensive applications
+building  ->  astoris.dev + a side project in Go
+exploring ->  event sourcing and CQRS patterns
+avoiding  ->  ORMs that hide what the query is doing
 ```
 <!-- NOW:END -->
 
-<sub><em>last edited by hand — `/now` is a ritual, not a feed.</em></sub>
+<sub><em>last edited by hand - `/now` is a ritual, not a feed.</em></sub>
 
 <br/>
 
@@ -70,13 +67,13 @@ avoiding  →  anything with a framework in the name
 ### <sub><code>03 · THE STACK I REACH FOR</code></sub>
 
 <p>
-  <img alt="c"          src="https://img.shields.io/badge/C-1a1a1a?style=flat-square&logo=c&logoColor=f4f0e8" />
   <img alt="rust"       src="https://img.shields.io/badge/rust-c24e2c?style=flat-square&logo=rust&logoColor=f4f0e8" />
-  <img alt="zig"        src="https://img.shields.io/badge/zig-1a1a1a?style=flat-square&logo=zig&logoColor=f4f0e8" />
-  <img alt="asm"        src="https://img.shields.io/badge/asm-5e5a54?style=flat-square&logoColor=f4f0e8" />
+  <img alt="go"         src="https://img.shields.io/badge/go-1a1a1a?style=flat-square&logo=go&logoColor=f4f0e8" />
+  <img alt="c"          src="https://img.shields.io/badge/C-1a1a1a?style=flat-square&logo=c&logoColor=f4f0e8" />
   <img alt="typescript" src="https://img.shields.io/badge/typescript-1a1a1a?style=flat-square&logo=typescript&logoColor=f4f0e8" />
-  <img alt="vite"       src="https://img.shields.io/badge/vite-1a1a1a?style=flat-square&logo=vite&logoColor=f4f0e8" />
-  <img alt="mathematica" src="https://img.shields.io/badge/mathematica-5e5a54?style=flat-square&logo=wolframmathematica&logoColor=f4f0e8" />
+  <img alt="postgresql" src="https://img.shields.io/badge/postgresql-1a1a1a?style=flat-square&logo=postgresql&logoColor=f4f0e8" />
+  <img alt="redis"      src="https://img.shields.io/badge/redis-5e5a54?style=flat-square&logo=redis&logoColor=f4f0e8" />
+  <img alt="docker"     src="https://img.shields.io/badge/docker-1a1a1a?style=flat-square&logo=docker&logoColor=f4f0e8" />
   <img alt="neovim"     src="https://img.shields.io/badge/neovim-1a1a1a?style=flat-square&logo=neovim&logoColor=f4f0e8" />
   <img alt="linux"      src="https://img.shields.io/badge/linux-5e5a54?style=flat-square&logo=linux&logoColor=f4f0e8" />
   <img alt="git"        src="https://img.shields.io/badge/git-c24e2c?style=flat-square&logo=git&logoColor=f4f0e8" />
@@ -86,7 +83,7 @@ avoiding  →  anything with a framework in the name
 
 <br/>
 
-<!-- ── 04 · stats — live ───────────────────────────────────────────────── -->
+<!-- ── 04 · stats ─────────────────────────────────────────────────────── -->
 
 ### <sub><code>04 · STATS, LIVE</code></sub>
 
@@ -127,30 +124,19 @@ avoiding  →  anything with a framework in the name
 
 <br/>
 
-<!-- ── 06 · spotify ────────────────────────────────────────────────────── -->
+<!-- ── 06 · quote - rotated daily by Action ────────────────────────────── -->
 
-### <sub><code>06 · PLAYING RIGHT NOW</code></sub>
-
-<!-- SPOTIFY:START -->
-<!-- this block is rewritten by .github/workflows/spotify.yml every 5 minutes -->
-<p><em>— nothing playing. probably deep in a man page. —</em></p>
-<!-- SPOTIFY:END -->
-
-<br/>
-
-<!-- ── 07 · quote — rotated daily by Action ────────────────────────────── -->
-
-### <sub><code>07 · QUOTE, DAILY</code></sub>
+### <sub><code>06 · QUOTE, DAILY</code></sub>
 
 <!-- QUOTE:START -->
-> _"Programs must be written for people to read, and only incidentally for machines to execute."_ — **Harold Abelson**
+> _"Programs must be written for people to read, and only incidentally for machines to execute."_ - **Harold Abelson**
 <!-- QUOTE:END -->
 
 <br/>
 
-<!-- ── 08 · hidden ─────────────────────────────────────────────────────── -->
+<!-- ── 07 · hidden ─────────────────────────────────────────────────────── -->
 
-### <sub><code>08 · HIDDEN</code></sub>
+### <sub><code>07 · HIDDEN</code></sub>
 
 <details>
   <summary><sub><code>$ cat .bashrc | tail -n 1</code></sub></summary>
@@ -167,26 +153,28 @@ avoiding  →  anything with a framework in the name
 
   ```
   NAME
-        astoris — low-level programmer, mild procrastination habit
+        astoris - backend developer, mild procrastination habit
 
   SYNOPSIS
-        astoris [--reading <source>] [--poking <language>]
-                [--avoiding <framework>] [--shipping? no]
+        astoris [--building <service>] [--debugging <query>]
+                [--avoiding <orm>] [--shipping? eventually]
 
   DESCRIPTION
-        A small, sharp program. Takes longer than estimated.
-        Produces honest output. No telemetry. No ceremony.
+        Builds backends. APIs, databases, and the pipes between them.
+        Takes longer than estimated. Produces honest output.
+        No unnecessary abstractions. No ceremony.
 
   FILES
         ~/astoris/permanent-portfolio    the canonical site
-        ~/astoris/.config/philosophy.md  fewer layers
-        ~/astoris/.config/signoff.md     hand-written HTML & opinions
+        ~/astoris/.config/philosophy.md  keep it boring in prod
+        ~/astoris/.config/api-design.md  say what you do, do what you say
 
   BUGS
         procrastinates. see ISSUES.md (eventually).
+        occasionally over-indexes on query optimization.
 
   SEE ALSO
-        astoris.dev(7), github(7), coffee(1)
+        astoris.dev(7), postgresql(1), github(7), coffee(1)
   ```
 
 </details>
@@ -204,16 +192,16 @@ avoiding  →  anything with a framework in the name
                    │     (yes, 01 in binary.      │
                    │      low-level joke.)        │
                    │                              │
-                   │     — astoris                │
+                   │     - astoris                │
                    ╰──────────────────────────────╯
   ```
 
-  <sub>drop me a line: <a href="mailto:astoris@example.com">astoris@example.com</a> — subject line <code>0b1</code> for priority.</sub>
+  <sub>drop me a line: <a href="mailto:AstorisTheBrave@proton.me">AstorisTheBrave@proton.me</a> - subject line <code>0b1</code> for priority.</sub>
 </details>
 
 <br/>
 
-<!-- ── 09 · sign-off ───────────────────────────────────────────────────── -->
+<!-- ── 08 · sign-off ───────────────────────────────────────────────────── -->
 
 <p align="center">
   <sub>
