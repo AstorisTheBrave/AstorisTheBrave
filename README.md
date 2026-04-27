@@ -219,7 +219,7 @@ Personal finance tracker backend. Accounts, transactions, running balances. The 
 ### <sub><code>07 · QUOTE, WEEKLY</code></sub>
 
 <!-- QUOTE:START -->
-> _"Programs must be written for people to read, and only incidentally for machines to execute."_ - **Harold Abelson**
+> _"Controlling complexity is the essence of computer programming."_ - **Brian Kernighan**
 <!-- QUOTE:END -->
 
 <br/>
