@@ -152,14 +152,14 @@ REST CRUD API on Node's built-in `http` module. No Express, no Fastify. Manual r
 
 **[url-shortener](https://github.com/AstorisTheBrave/url-shortener)** &nbsp; <sub>`Go`</sub>
 
-URL shortener in three files. Shorten, redirect, persist slugs to JSON between restarts. Uses `crypto/rand` for unguessable slugs.
+URL shortener in three files. Shorten, redirect, persist slugs to JSON between restarts. `crypto/rand` for unguessable slugs.
 
 </td>
 <td valign="top" width="50%">
 
 **[rate-limiter](https://github.com/AstorisTheBrave/rate-limiter)** &nbsp; <sub>`Go`</sub>
 
-Token bucket rate limiter as a standalone library with `http.Handler` middleware and unit tests. Composes with any Go HTTP server.
+Token bucket rate limiter as a standalone library with `http.Handler` per-IP middleware and unit tests that check refill timing.
 
 </td>
 </tr>
@@ -173,24 +173,45 @@ TCP pub/sub broker. `SUB` / `PUB` / `UNSUB` over plain text. One goroutine per c
 </td>
 <td valign="top" width="50%">
 
-**[eml-visualiser](https://github.com/AstorisTheBrave/eml-visualiser)** &nbsp; <sub>`JavaScript`</sub>
+**[authcore-service](https://github.com/AstorisTheBrave/authcore-service)** &nbsp; <sub>`Python`</sub>
 
-Renders elementary functions as EML binary trees, based on Odrzywolek's 2025 paper. The interesting part is the parsing and tree layout, not the UI.
+Standalone authentication microservice. Registration, login, token issuance and validation pulled out of the app and into their own service.
 
 </td>
 </tr>
 <tr>
 <td valign="top" width="50%">
 
-**[CIT - Cascade Impact Trace](https://github.com/AstorisTheBrave/CIT-Cascade-Impact-Trace-for-Claude)** &nbsp; <sub>`tooling`</sub>
+**[notifyhub](https://github.com/AstorisTheBrave/notifyhub)** &nbsp; <sub>`Python`</sub>
 
-Claude skills that map the full blast radius of any change before you make it. Works on Claude Desktop, claude.ai, and Claude Code.
+Notification service with queue-based delivery. Producers drop events on the queue, workers handle dispatch. Decoupled by design.
 
 </td>
-<td valign="top" width="50%"></td>
+<td valign="top" width="50%">
+
+**[pulse-api](https://github.com/AstorisTheBrave/pulse-api)** &nbsp; <sub>`Python`</sub>
+
+Lightweight service health monitoring API. Registers services, runs checks on a schedule, exposes a status endpoint. Small and useful.
+
+</td>
+</tr>
+<tr>
+<td valign="top" width="50%">
+
+**[streamsync](https://github.com/AstorisTheBrave/streamsync)** &nbsp; <sub>`Python`</sub>
+
+Real-time backend with WebSocket support. Handles persistent connections, broadcasts state changes, keeps HTTP and WS under one roof.
+
+</td>
+<td valign="top" width="50%">
+
+**[ledgerlite-api](https://github.com/AstorisTheBrave/ledgerlite-api)** &nbsp; <sub>`Python`</sub>
+
+Personal finance tracker backend. Accounts, transactions, running balances. The kind of domain where getting the data model right matters more than the endpoints.
+
+</td>
 </tr>
 </table>
-
 <br/>
 
 <!-- ── 07 · quote - rotated weekly by Action ───────────────────────────── -->
