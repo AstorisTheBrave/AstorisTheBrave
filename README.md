@@ -219,7 +219,7 @@ Personal finance tracker backend. Accounts, transactions, running balances. The 
 ### <sub><code>07 · QUOTE, WEEKLY</code></sub>
 
 <!-- QUOTE:START -->
-> _"Any fool can write code that a computer can understand. Good programmers write code that humans can understand."_ - **Martin Fowler**
+> _"A ship in port is safe, but that's not what ships are built for."_ - **Grace Hopper**
 <!-- QUOTE:END -->
 
 <br/>
