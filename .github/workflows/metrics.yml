@@ -9,7 +9,12 @@ on:
   push:
     branches: [main]
 
-# metrics commits the rendered SVGs back to the repo via the token.
+# serialize runs so the commits below never race each other.
+concurrency:
+  group: metrics
+  cancel-in-progress: false
+
+# we commit the rendered SVGs back to the repo.
 permissions:
   contents: write
 
@@ -17,13 +22,34 @@ jobs:
   render:
     runs-on: ubuntu-latest
     steps:
+      # ── languages · its own card, every public repo, % by bytes ──────────
+      # The Actions GITHUB_TOKEN only *administers* this repo, but it can still
+      # READ public data - so this script aggregates language bytes across all
+      # public repos itself, no PAT required. (lowlighter/metrics can't: with
+      # the default token it only sees this repo, which is why it showed only
+      # HTML.) Runs first so its push is a clean fast-forward.
+      - uses: actions/checkout@v4
+
+      - name: render languages
+        env:
+          GH_TOKEN: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+        run: python3 .github/scripts/render_languages.py
+
+      - name: commit languages
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/languages.svg assets/languages-dark.svg
+          git diff --staged --quiet || git commit -m "chore(metrics): refresh languages"
+          git push
+
       # ── card · rank + a full year of activity ────────────────────────────
       - name: card (light)
         uses: lowlighter/metrics@v3.34
         with:
           # GITHUB_TOKEN works out of the box (public data). Add a classic PAT
           # named METRICS_TOKEN (scope: repo, read:user) to include private
-          # repos in both the card and the language stats — see SETUP.md.
+          # repos in the card and the language stats — see SETUP.md.
           token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
           user: AstorisTheBrave
           filename: assets/metrics.svg
@@ -62,55 +88,3 @@ jobs:
             body, .field, .value, .legend, text { color: #ece7dc !important; }
             h2, .title   { color: #e27a52 !important; }
             .calendar-graph text { fill: #a8a49b !important; }
-
-      # ── languages · its own card, all repos, % by bytes ──────────────────
-      - name: languages (light)
-        uses: lowlighter/metrics@v3.34
-        with:
-          token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
-          user: AstorisTheBrave
-          filename: assets/languages.svg
-          committer_message: "chore(metrics): refresh languages (light)"
-
-          base: ""
-          plugin_languages: yes
-          # most-used = each language's share of bytes across your repos,
-          # straight from GitHub's linguist data. (indepth is intentionally
-          # off: it attributes commits per-author and renders "No push
-          # activity found" under the default bot token.)
-          plugin_languages_sections: most-used
-          plugin_languages_details: percentage, bytes-size
-          plugin_languages_threshold: 0%
-          plugin_languages_limit: 8
-          # This profile repo is HTML and gets an automated bot commit every
-          # week (quote + metrics). Skip it so the bar reflects real code,
-          # not the automation.
-          plugin_languages_skipped: |
-            AstorisTheBrave/AstorisTheBrave
-
-          extras_css: |
-            .background  { fill: #f4f0e8 !important; }
-            body, .field, .value, .legend, text { color: #1a1a1a !important; }
-            h2, .title   { color: #c24e2c !important; }
-
-      - name: languages (dark)
-        uses: lowlighter/metrics@v3.34
-        with:
-          token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
-          user: AstorisTheBrave
-          filename: assets/languages-dark.svg
-          committer_message: "chore(metrics): refresh languages (dark)"
-
-          base: ""
-          plugin_languages: yes
-          plugin_languages_sections: most-used
-          plugin_languages_details: percentage, bytes-size
-          plugin_languages_threshold: 0%
-          plugin_languages_limit: 8
-          plugin_languages_skipped: |
-            AstorisTheBrave/AstorisTheBrave
-
-          extras_css: |
-            .background  { fill: #07070a !important; }
-            body, .field, .value, .legend, text { color: #ece7dc !important; }
-            h2, .title   { color: #e27a52 !important; }
