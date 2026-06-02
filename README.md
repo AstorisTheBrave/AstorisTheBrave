@@ -20,10 +20,6 @@
 
 <!-- ── 01 · about ─────────────────────────────────────────────────────── -->
 
-<table width="100%" border="0">
-<tr>
-<td valign="top" width="55%">
-
 ### <sub><code>01 · ABOUT</code></sub>
 
 > _"Backend developer with a mild procrastination habit.<br/>
@@ -34,14 +30,9 @@ I'm **Astoris** - I build backends. APIs, databases, and the plumbing between se
 
 Not shipping anything loud right now - more side projects, more reading, more tabs left open overnight.
 
-</td>
-<td valign="top" width="45%">
-
-<img src="./assets/whoami.svg" alt="whoami - terminal session" width="100%" />
-
-</td>
-</tr>
-</table>
+<p align="center">
+  <img src="./assets/whoami.svg" alt="whoami - terminal session" width="100%" />
+</p>
 
 <br/>
 
