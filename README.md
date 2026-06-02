@@ -198,6 +198,38 @@ Personal finance tracker backend. Accounts, transactions, running balances. The 
 
 </td>
 </tr>
+<tr>
+<td valign="top" width="50%">
+
+**[drawing-board](https://github.com/AstorisTheBrave/drawing-board)** &nbsp; <sub>`TypeScript`</sub>
+
+Real-time collaborative drawing board over WebSockets. Shared canvas, multiple clients, every stroke broadcast to the room.
+
+</td>
+<td valign="top" width="50%">
+
+**[fileflow-api](https://github.com/AstorisTheBrave/fileflow-api)** &nbsp; <sub>`Python`</sub>
+
+File processing backend. Upload, transform, and stream files through a small, predictable API - the unglamorous plumbing of moving bytes.
+
+</td>
+</tr>
+<tr>
+<td valign="top" width="50%">
+
+**[cachelab](https://github.com/AstorisTheBrave/cachelab)** &nbsp; <sub>`Python`</sub>
+
+A bench for caching strategies. Write-through, write-back, and TTL eviction behind one API, so you can watch the hit rate actually move.
+
+</td>
+<td valign="top" width="50%">
+
+**[taskforge-cli](https://github.com/AstorisTheBrave/taskforge-cli)** &nbsp; <sub>`Python`</sub>
+
+Personal productivity CLI. Add, list, and close tasks straight from the terminal. Local-first, no account, no sync.
+
+</td>
+</tr>
 </table>
 <br/>
 
