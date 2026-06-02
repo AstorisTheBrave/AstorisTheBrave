@@ -74,9 +74,10 @@ jobs:
 
           base: ""
           plugin_languages: yes
-          # indepth clones the repos and counts real bytes, so the
-          # percentages are byte-accurate rather than guessed from the API.
-          plugin_languages_indepth: yes
+          # most-used = each language's share of bytes across your repos,
+          # straight from GitHub's linguist data. (indepth is intentionally
+          # off: it attributes commits per-author and renders "No push
+          # activity found" under the default bot token.)
           plugin_languages_sections: most-used
           plugin_languages_details: percentage, bytes-size
           plugin_languages_threshold: 0%
@@ -102,7 +103,6 @@ jobs:
 
           base: ""
           plugin_languages: yes
-          plugin_languages_indepth: yes
           plugin_languages_sections: most-used
           plugin_languages_details: percentage, bytes-size
           plugin_languages_threshold: 0%
