@@ -53,19 +53,23 @@ exactly like the snake. The `metrics` workflow writes four files every 12h:
 
 - `assets/metrics.svg` / `assets/metrics-dark.svg` - rank + a full year of activity.
 - `assets/languages.svg` / `assets/languages-dark.svg` - a standalone languages
-  card showing every language by **share of bytes** (`indepth` mode clones the
-  repos and counts real bytes). This profile repo is skipped via
-  `plugin_languages_skipped` - it's HTML and takes an automated commit each week,
-  which would otherwise dominate the bar.
+  card showing every public repo's languages by **share of bytes**. It's rendered
+  by `.github/scripts/render_languages.py`, which aggregates language bytes across
+  all public repos via the API. (The metrics languages plugin can't do this with
+  the default token - the Actions `GITHUB_TOKEN` only sees this one repo, which is
+  why it showed only HTML - so a tiny script does the cross-repo read itself, no
+  PAT needed. This profile repo is skipped so its weekly auto-commit doesn't
+  dominate.)
 
 The README just embeds those files, so there are zero view-time API calls and the
 images always load.
 
-- **Default:** works immediately with the built-in `GITHUB_TOKEN` (public data).
-- **Optional upgrade:** to include *private* repos in both the card and the
-  language stats, create a classic Personal Access Token (scopes: `repo`,
-  `read:user`), add it under **Settings -> Secrets and variables -> Actions** as
-  `METRICS_TOKEN`. The workflow picks it up automatically.
+- **Default:** works immediately with the built-in `GITHUB_TOKEN` (public repos).
+- **Optional upgrade:** to include *private* repos in the activity card, create a
+  classic Personal Access Token (scopes: `repo`, `read:user`), add it under
+  **Settings -> Secrets and variables -> Actions** as `METRICS_TOKEN`. The
+  workflow picks it up automatically (the language script will then count private
+  repos too).
 
 Force the first run from **Actions -> metrics -> Run workflow**. Tune the palette
 via the `extras_css` blocks in `.github/workflows/metrics.yml`.
