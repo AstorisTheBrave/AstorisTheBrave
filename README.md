@@ -81,11 +81,22 @@ avoiding  ->  ORMs that hide what the query is doing
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/metrics-dark.svg" />
-    <img alt="github metrics - rank, languages, and a year of contributions" src="./assets/metrics.svg" width="100%" />
+    <img alt="github metrics - rank and a year of contributions" src="./assets/metrics.svg" width="100%" />
   </picture>
 </p>
 
-<sub>rank, languages, and a year of activity - rendered to a static SVG every 12h by a GitHub Action (no view-time API calls, so it always loads). see <code>.github/workflows/metrics.yml</code>.</sub>
+<sub>rank and a year of activity - rendered to a static SVG every 12h by a GitHub Action (no view-time API calls, so it always loads). see <code>.github/workflows/metrics.yml</code>.</sub>
+
+<br/>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/languages-dark.svg" />
+    <img alt="most-used languages by bytes across all repositories" src="./assets/languages.svg" width="100%" />
+  </picture>
+</p>
+
+<sub>languages by share of bytes across every repo (this profile repo is skipped - it's HTML and takes an automated commit each week).</sub>
 
 <br/>
 
