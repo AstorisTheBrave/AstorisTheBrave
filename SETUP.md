@@ -40,6 +40,28 @@ section 05. Force a run from **Actions -> snake -> Run workflow**.
 
 Rotates the daily quote at 07:00 UTC. Nothing to configure.
 
+### 3c · Metrics (no setup to start)
+
+Section 04 used to pull stat cards from shared public services
+(`github-readme-stats.vercel.app`, `streak-stats.demolab.com`). Those call the
+GitHub API on every page view, share one 5k-req/hour budget across *everyone*,
+and routinely hit the rate limit - so GitHub's image proxy caches a broken
+response and the cards stop loading.
+
+The fix: render the stats **once** in an Action and commit them as a static SVG,
+exactly like the snake. The `metrics` workflow writes `assets/metrics.svg` (light)
+and `assets/metrics-dark.svg` (dark) every 12h. The README just embeds those
+files, so there are zero view-time API calls and the images always load.
+
+- **Default:** works immediately with the built-in `GITHUB_TOKEN` (public data).
+- **Optional upgrade:** to include *private* contributions, create a classic
+  Personal Access Token (scopes: `repo`, `read:user`), add it under
+  **Settings -> Secrets and variables -> Actions** as `METRICS_TOKEN`. The
+  workflow picks it up automatically.
+
+Force the first run from **Actions -> metrics -> Run workflow**. Tune the palette
+via the `extras_css` blocks in `.github/workflows/metrics.yml`.
+
 ## 4 · Editing the `/now` block by hand
 
 Find this in the README:
@@ -76,7 +98,8 @@ github-profile/
 │   └─ whoami.svg                        <- terminal whoami animation
 ├─ .github/workflows/
 │   ├─ snake.yml                         <- contribution snake (6h)
-│   └─ quote.yml                         <- daily quote rotation
+│   ├─ quote.yml                         <- weekly quote rotation
+│   └─ metrics.yml                       <- stats/rank/activity SVG (12h)
 ├─ preview.html                          <- local preview of the whole thing
 └─ SETUP.md                              <- this file
 ```
