@@ -30,7 +30,7 @@
 > I like systems that stay up, APIs that say what they do,<br/>
 > and code that runs the same in prod as it does locally."_
 
-I'm **Astoris** - I build backends. APIs, databases, and the plumbing that connects services together. A lot of my time goes into reading other people's code, staring at query plans, and taking notes I'll never find again.
+I'm **Astoris** - I build backends. APIs, databases, and the plumbing between services. Most of my time goes to reading other people's code, staring at query plans, and taking notes I'll never find again.
 
 Not shipping anything loud right now - more side projects, more reading, more tabs left open overnight.
 
@@ -87,27 +87,14 @@ avoiding  ->  ORMs that hide what the query is doing
 
 ### <sub><code>04 · STATS, LIVE</code></sub>
 
-<table width="100%" border="0"><tr>
-<td valign="top">
+<p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=AstorisTheBrave&show_icons=true&hide_border=true&bg_color=07070a&title_color=e27a52&icon_color=e27a52&text_color=ece7dc&include_all_commits=true&count_private=true" />
-    <img alt="stats" src="https://github-readme-stats.vercel.app/api?username=AstorisTheBrave&show_icons=true&hide_border=true&bg_color=f4f0e8&title_color=c24e2c&icon_color=c24e2c&text_color=1a1a1a&include_all_commits=true&count_private=true" />
-  </picture>
-</td>
-<td valign="top">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=AstorisTheBrave&layout=compact&hide_border=true&bg_color=07070a&title_color=e27a52&text_color=ece7dc&langs_count=8&count_private=true" />
-    <img alt="langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AstorisTheBrave&layout=compact&hide_border=true&bg_color=f4f0e8&title_color=c24e2c&text_color=1a1a1a&langs_count=8&count_private=true" />
-  </picture>
-</td>
-</tr></table>
-
-<p>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=AstorisTheBrave&hide_border=true&background=07070a&stroke=1f1d1a&ring=e27a52&fire=e27a52&currStreakLabel=e27a52&sideLabels=a8a49b&currStreakNum=ece7dc&sideNums=ece7dc&dates=6b6760" />
-    <img alt="streak" src="https://streak-stats.demolab.com/?user=AstorisTheBrave&hide_border=true&background=f4f0e8&stroke=d9d3c6&ring=c24e2c&fire=c24e2c&currStreakLabel=c24e2c&sideLabels=5e5a54&currStreakNum=1a1a1a&sideNums=1a1a1a&dates=928d84" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/metrics-dark.svg" />
+    <img alt="github metrics - rank, languages, and a year of contributions" src="./assets/metrics.svg" width="100%" />
   </picture>
 </p>
+
+<sub>rank, languages, and a year of activity - rendered to a static SVG every 12h by a GitHub Action (no view-time API calls, so it always loads). see <code>.github/workflows/metrics.yml</code>.</sub>
 
 <br/>
 
@@ -208,6 +195,38 @@ Real-time backend with WebSocket support. Handles persistent connections, broadc
 **[ledgerlite-api](https://github.com/AstorisTheBrave/ledgerlite-api)** &nbsp; <sub>`Python`</sub>
 
 Personal finance tracker backend. Accounts, transactions, running balances. The kind of domain where getting the data model right matters more than the endpoints.
+
+</td>
+</tr>
+<tr>
+<td valign="top" width="50%">
+
+**[drawing-board](https://github.com/AstorisTheBrave/drawing-board)** &nbsp; <sub>`TypeScript`</sub>
+
+Real-time collaborative drawing board over WebSockets. Shared canvas, multiple clients, every stroke broadcast to the room.
+
+</td>
+<td valign="top" width="50%">
+
+**[fileflow-api](https://github.com/AstorisTheBrave/fileflow-api)** &nbsp; <sub>`Python`</sub>
+
+File processing backend. Upload, transform, and stream files through a small, predictable API - the unglamorous plumbing of moving bytes.
+
+</td>
+</tr>
+<tr>
+<td valign="top" width="50%">
+
+**[cachelab](https://github.com/AstorisTheBrave/cachelab)** &nbsp; <sub>`Python`</sub>
+
+A bench for caching strategies. Write-through, write-back, and TTL eviction behind one API, so you can watch the hit rate actually move.
+
+</td>
+<td valign="top" width="50%">
+
+**[taskforge-cli](https://github.com/AstorisTheBrave/taskforge-cli)** &nbsp; <sub>`Python`</sub>
+
+Personal productivity CLI. Add, list, and close tasks straight from the terminal. Local-first, no account, no sync.
 
 </td>
 </tr>
