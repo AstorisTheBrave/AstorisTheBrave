@@ -48,16 +48,24 @@ GitHub API on every page view, share one 5k-req/hour budget across *everyone*,
 and routinely hit the rate limit - so GitHub's image proxy caches a broken
 response and the cards stop loading.
 
-The fix: render the stats **once** in an Action and commit them as a static SVG,
-exactly like the snake. The `metrics` workflow writes `assets/metrics.svg` (light)
-and `assets/metrics-dark.svg` (dark) every 12h. The README just embeds those
-files, so there are zero view-time API calls and the images always load.
+The fix: render the stats **once** in an Action and commit them as static SVGs,
+exactly like the snake. The `metrics` workflow writes four files every 12h:
+
+- `assets/metrics.svg` / `assets/metrics-dark.svg` - rank + a full year of activity.
+- `assets/languages.svg` / `assets/languages-dark.svg` - a standalone languages
+  card showing every language by **share of bytes** (`indepth` mode clones the
+  repos and counts real bytes). This profile repo is skipped via
+  `plugin_languages_skipped` - it's HTML and takes an automated commit each week,
+  which would otherwise dominate the bar.
+
+The README just embeds those files, so there are zero view-time API calls and the
+images always load.
 
 - **Default:** works immediately with the built-in `GITHUB_TOKEN` (public data).
-- **Optional upgrade:** to include *private* contributions, create a classic
-  Personal Access Token (scopes: `repo`, `read:user`), add it under
-  **Settings -> Secrets and variables -> Actions** as `METRICS_TOKEN`. The
-  workflow picks it up automatically.
+- **Optional upgrade:** to include *private* repos in both the card and the
+  language stats, create a classic Personal Access Token (scopes: `repo`,
+  `read:user`), add it under **Settings -> Secrets and variables -> Actions** as
+  `METRICS_TOKEN`. The workflow picks it up automatically.
 
 Force the first run from **Actions -> metrics -> Run workflow**. Tune the palette
 via the `extras_css` blocks in `.github/workflows/metrics.yml`.
