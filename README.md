@@ -240,7 +240,7 @@ Personal productivity CLI. Add, list, and close tasks straight from the terminal
 ### <sub><code>07 · QUOTE, WEEKLY</code></sub>
 
 <!-- QUOTE:START -->
-> _"The database is not the enemy. Ignoring it is."_ - **Astoris**
+> _"Simplicity is prerequisite for reliability."_ - **Edsger W. Dijkstra**
 <!-- QUOTE:END -->
 
 <br/>
