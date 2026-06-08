@@ -4,28 +4,28 @@
 <rect x="20" y="38" width="440" height="10" rx="5" fill="#e6e0d3"/>
 <clipPath id="bar"><rect x="20" y="38" width="440" height="10" rx="5"/></clipPath>
 <g clip-path="url(#bar)">
-<rect x="20.00" y="38" width="246.72" height="10" fill="#3178c6"/>
-<rect x="266.72" y="38" width="143.26" height="10" fill="#3572A5"/>
-<rect x="409.98" y="38" width="21.63" height="10" fill="#f1e05a"/>
-<rect x="431.62" y="38" width="15.24" height="10" fill="#fcb32c"/>
-<rect x="446.85" y="38" width="5.45" height="10" fill="#e34c26"/>
-<rect x="452.31" y="38" width="4.50" height="10" fill="#00ADD8"/>
-<rect x="456.81" y="38" width="1.77" height="10" fill="#563d7c"/>
-<rect x="458.58" y="38" width="0.91" height="10" fill="#555555"/>
-<rect x="459.49" y="38" width="0.51" height="10" fill="#928d84"/>
+<rect x="20.00" y="38" width="271.40" height="10" fill="#3178c6"/>
+<rect x="291.40" y="38" width="124.97" height="10" fill="#3572A5"/>
+<rect x="416.37" y="38" width="18.87" height="10" fill="#f1e05a"/>
+<rect x="435.24" y="38" width="13.29" height="10" fill="#fcb32c"/>
+<rect x="448.53" y="38" width="4.76" height="10" fill="#e34c26"/>
+<rect x="453.29" y="38" width="3.93" height="10" fill="#00ADD8"/>
+<rect x="457.22" y="38" width="1.55" height="10" fill="#563d7c"/>
+<rect x="458.76" y="38" width="0.79" height="10" fill="#555555"/>
+<rect x="459.55" y="38" width="0.45" height="10" fill="#928d84"/>
 </g>
 <circle cx="24.0" cy="68.0" r="4" fill="#3178c6"/>
-<text x="34.0" y="72.0" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="#1a1a1a">TypeScript <tspan fill="#5e5a54">56.1%</tspan></text>
+<text x="34.0" y="72.0" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="#1a1a1a">TypeScript <tspan fill="#5e5a54">61.7%</tspan></text>
 <circle cx="244.0" cy="68.0" r="4" fill="#3572A5"/>
-<text x="254.0" y="72.0" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="#1a1a1a">Python <tspan fill="#5e5a54">32.6%</tspan></text>
+<text x="254.0" y="72.0" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="#1a1a1a">Python <tspan fill="#5e5a54">28.4%</tspan></text>
 <circle cx="24.0" cy="86.0" r="4" fill="#f1e05a"/>
-<text x="34.0" y="90.0" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="#1a1a1a">JavaScript <tspan fill="#5e5a54">4.9%</tspan></text>
+<text x="34.0" y="90.0" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="#1a1a1a">JavaScript <tspan fill="#5e5a54">4.3%</tspan></text>
 <circle cx="244.0" cy="86.0" r="4" fill="#fcb32c"/>
-<text x="254.0" y="90.0" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="#1a1a1a">MDX <tspan fill="#5e5a54">3.5%</tspan></text>
+<text x="254.0" y="90.0" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="#1a1a1a">MDX <tspan fill="#5e5a54">3.0%</tspan></text>
 <circle cx="24.0" cy="104.0" r="4" fill="#e34c26"/>
-<text x="34.0" y="108.0" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="#1a1a1a">HTML <tspan fill="#5e5a54">1.2%</tspan></text>
+<text x="34.0" y="108.0" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="#1a1a1a">HTML <tspan fill="#5e5a54">1.1%</tspan></text>
 <circle cx="244.0" cy="104.0" r="4" fill="#00ADD8"/>
-<text x="254.0" y="108.0" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="#1a1a1a">Go <tspan fill="#5e5a54">1.0%</tspan></text>
+<text x="254.0" y="108.0" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="#1a1a1a">Go <tspan fill="#5e5a54">0.9%</tspan></text>
 <circle cx="24.0" cy="122.0" r="4" fill="#563d7c"/>
 <text x="34.0" y="126.0" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="#1a1a1a">CSS <tspan fill="#5e5a54">0.4%</tspan></text>
 <circle cx="244.0" cy="122.0" r="4" fill="#555555"/>
