@@ -4,13 +4,13 @@
 <rect x="20" y="38" width="440" height="10" rx="5" fill="#1f1d1a"/>
 <clipPath id="bar"><rect x="20" y="38" width="440" height="10" rx="5"/></clipPath>
 <g clip-path="url(#bar)">
-<rect x="20.00" y="38" width="288.01" height="10" fill="#3178c6"/>
-<rect x="308.01" y="38" width="112.30" height="10" fill="#3572A5"/>
-<rect x="420.31" y="38" width="18.13" height="10" fill="#f1e05a"/>
-<rect x="438.44" y="38" width="11.41" height="10" fill="#fcb32c"/>
-<rect x="449.85" y="38" width="4.11" height="10" fill="#e34c26"/>
+<rect x="20.00" y="38" width="288.06" height="10" fill="#3178c6"/>
+<rect x="308.06" y="38" width="112.26" height="10" fill="#3572A5"/>
+<rect x="420.32" y="38" width="18.13" height="10" fill="#f1e05a"/>
+<rect x="438.45" y="38" width="11.41" height="10" fill="#fcb32c"/>
+<rect x="449.86" y="38" width="4.11" height="10" fill="#e34c26"/>
 <rect x="453.96" y="38" width="3.37" height="10" fill="#00ADD8"/>
-<rect x="457.33" y="38" width="1.33" height="10" fill="#563d7c"/>
+<rect x="457.34" y="38" width="1.33" height="10" fill="#563d7c"/>
 <rect x="458.66" y="38" width="0.68" height="10" fill="#555555"/>
 <rect x="459.34" y="38" width="0.66" height="10" fill="#928d84"/>
 </g>
