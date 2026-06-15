@@ -240,7 +240,7 @@ Personal productivity CLI. Add, list, and close tasks straight from the terminal
 ### <sub><code>07 · QUOTE, WEEKLY</code></sub>
 
 <!-- QUOTE:START -->
-> _"Simplicity is prerequisite for reliability."_ - **Edsger W. Dijkstra**
+> _"The purpose of computing is insight, not numbers."_ - **Richard Hamming**
 <!-- QUOTE:END -->
 
 <br/>
