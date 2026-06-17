@@ -4,32 +4,32 @@
 <rect x="20" y="38" width="440" height="10" rx="5" fill="#e6e0d3"/>
 <clipPath id="bar"><rect x="20" y="38" width="440" height="10" rx="5"/></clipPath>
 <g clip-path="url(#bar)">
-<rect x="20.00" y="38" width="288.06" height="10" fill="#3178c6"/>
-<rect x="308.06" y="38" width="112.26" height="10" fill="#3572A5"/>
-<rect x="420.32" y="38" width="18.13" height="10" fill="#f1e05a"/>
-<rect x="438.45" y="38" width="11.41" height="10" fill="#fcb32c"/>
-<rect x="449.86" y="38" width="4.11" height="10" fill="#e34c26"/>
-<rect x="453.96" y="38" width="3.37" height="10" fill="#00ADD8"/>
-<rect x="457.34" y="38" width="1.33" height="10" fill="#563d7c"/>
-<rect x="458.66" y="38" width="0.68" height="10" fill="#555555"/>
-<rect x="459.34" y="38" width="0.66" height="10" fill="#928d84"/>
+<rect x="20.00" y="38" width="273.79" height="10" fill="#3178c6"/>
+<rect x="293.79" y="38" width="128.50" height="10" fill="#3572A5"/>
+<rect x="422.29" y="38" width="17.23" height="10" fill="#f1e05a"/>
+<rect x="439.52" y="38" width="10.84" height="10" fill="#fcb32c"/>
+<rect x="450.36" y="38" width="3.91" height="10" fill="#e34c26"/>
+<rect x="454.26" y="38" width="3.20" height="10" fill="#00ADD8"/>
+<rect x="457.47" y="38" width="1.26" height="10" fill="#563d7c"/>
+<rect x="458.73" y="38" width="0.64" height="10" fill="#555555"/>
+<rect x="459.38" y="38" width="0.62" height="10" fill="#928d84"/>
 </g>
 <circle cx="24.0" cy="68.0" r="4" fill="#3178c6"/>
-<text x="34.0" y="72.0" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="#1a1a1a">TypeScript <tspan fill="#5e5a54">65.5%</tspan></text>
+<text x="34.0" y="72.0" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="#1a1a1a">TypeScript <tspan fill="#5e5a54">62.2%</tspan></text>
 <circle cx="244.0" cy="68.0" r="4" fill="#3572A5"/>
-<text x="254.0" y="72.0" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="#1a1a1a">Python <tspan fill="#5e5a54">25.5%</tspan></text>
+<text x="254.0" y="72.0" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="#1a1a1a">Python <tspan fill="#5e5a54">29.2%</tspan></text>
 <circle cx="24.0" cy="86.0" r="4" fill="#f1e05a"/>
-<text x="34.0" y="90.0" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="#1a1a1a">JavaScript <tspan fill="#5e5a54">4.1%</tspan></text>
+<text x="34.0" y="90.0" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="#1a1a1a">JavaScript <tspan fill="#5e5a54">3.9%</tspan></text>
 <circle cx="244.0" cy="86.0" r="4" fill="#fcb32c"/>
-<text x="254.0" y="90.0" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="#1a1a1a">MDX <tspan fill="#5e5a54">2.6%</tspan></text>
+<text x="254.0" y="90.0" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="#1a1a1a">MDX <tspan fill="#5e5a54">2.5%</tspan></text>
 <circle cx="24.0" cy="104.0" r="4" fill="#e34c26"/>
 <text x="34.0" y="108.0" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="#1a1a1a">HTML <tspan fill="#5e5a54">0.9%</tspan></text>
 <circle cx="244.0" cy="104.0" r="4" fill="#00ADD8"/>
-<text x="254.0" y="108.0" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="#1a1a1a">Go <tspan fill="#5e5a54">0.8%</tspan></text>
+<text x="254.0" y="108.0" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="#1a1a1a">Go <tspan fill="#5e5a54">0.7%</tspan></text>
 <circle cx="24.0" cy="122.0" r="4" fill="#563d7c"/>
 <text x="34.0" y="126.0" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="#1a1a1a">CSS <tspan fill="#5e5a54">0.3%</tspan></text>
 <circle cx="244.0" cy="122.0" r="4" fill="#555555"/>
-<text x="254.0" y="126.0" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="#1a1a1a">C <tspan fill="#5e5a54">0.2%</tspan></text>
+<text x="254.0" y="126.0" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="#1a1a1a">C <tspan fill="#5e5a54">0.1%</tspan></text>
 <circle cx="24.0" cy="140.0" r="4" fill="#928d84"/>
 <text x="34.0" y="144.0" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" fill="#1a1a1a">Other <tspan fill="#5e5a54">0.1%</tspan></text>
 </svg>
