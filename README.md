@@ -22,13 +22,9 @@
 
 ### <sub><code>01 · ABOUT</code></sub>
 
-> _"Backend developer with a mild procrastination habit.<br/>
-> I like systems that stay up, APIs that say what they do,<br/>
-> and code that runs the same in prod as it does locally."_
+I'm **Astoris**. I build backends and Discord bots - right now [**Rostra**](https://github.com/AstorisTheBrave/Rostra), an all-in-one moderation and automod bot, and [**argus**](https://github.com/AstorisTheBrave/argus), which adds Prometheus/OpenTelemetry metrics to discord.py. Mostly Python and TypeScript, with some Go.
 
-I'm **Astoris** - I build backends. APIs, databases, and the plumbing between services. Most of my time goes to reading other people's code, staring at query plans, and taking notes I'll never find again.
-
-Not shipping anything loud right now - more side projects, more reading, more tabs left open overnight.
+I care about services that stay up and APIs that are boring to use. Still learning a lot of this as I go.
 
 <p align="center">
   <img src="./assets/whoami.svg" alt="whoami - terminal session" width="100%" />
@@ -42,14 +38,13 @@ Not shipping anything loud right now - more side projects, more reading, more ta
 
 <!-- NOW:START -->
 ```txt
-reading   ->  designing data-intensive applications
-building  ->  astoris.dev + a side project in Go
-exploring ->  event sourcing and CQRS patterns
-avoiding  ->  ORMs that hide what the query is doing
+building  ->  rostra - an all-in-one discord bot
+also      ->  argus - prometheus/otel metrics for discord.py
+learning  ->  observability: opentelemetry + prometheus
 ```
 <!-- NOW:END -->
 
-<sub><em>last edited by hand - `/now` is a ritual, not a feed.</em></sub>
+<sub><em>edited by hand whenever this changes.</em></sub>
 
 <br/>
 
@@ -58,19 +53,20 @@ avoiding  ->  ORMs that hide what the query is doing
 ### <sub><code>03 · THE STACK I REACH FOR</code></sub>
 
 <p>
-  <img alt="rust"       src="https://img.shields.io/badge/rust-c24e2c?style=flat-square&logo=rust&logoColor=f4f0e8" />
-  <img alt="go"         src="https://img.shields.io/badge/go-1a1a1a?style=flat-square&logo=go&logoColor=f4f0e8" />
-  <img alt="c"          src="https://img.shields.io/badge/C-1a1a1a?style=flat-square&logo=c&logoColor=f4f0e8" />
-  <img alt="typescript" src="https://img.shields.io/badge/typescript-1a1a1a?style=flat-square&logo=typescript&logoColor=f4f0e8" />
-  <img alt="postgresql" src="https://img.shields.io/badge/postgresql-1a1a1a?style=flat-square&logo=postgresql&logoColor=f4f0e8" />
-  <img alt="redis"      src="https://img.shields.io/badge/redis-5e5a54?style=flat-square&logo=redis&logoColor=f4f0e8" />
-  <img alt="docker"     src="https://img.shields.io/badge/docker-1a1a1a?style=flat-square&logo=docker&logoColor=f4f0e8" />
-  <img alt="neovim"     src="https://img.shields.io/badge/neovim-1a1a1a?style=flat-square&logo=neovim&logoColor=f4f0e8" />
-  <img alt="linux"      src="https://img.shields.io/badge/linux-5e5a54?style=flat-square&logo=linux&logoColor=f4f0e8" />
-  <img alt="git"        src="https://img.shields.io/badge/git-c24e2c?style=flat-square&logo=git&logoColor=f4f0e8" />
+  <img alt="python"        src="https://img.shields.io/badge/python-c24e2c?style=flat-square&logo=python&logoColor=f4f0e8" />
+  <img alt="typescript"    src="https://img.shields.io/badge/typescript-1a1a1a?style=flat-square&logo=typescript&logoColor=f4f0e8" />
+  <img alt="javascript"    src="https://img.shields.io/badge/javascript-1a1a1a?style=flat-square&logo=javascript&logoColor=f4f0e8" />
+  <img alt="go"            src="https://img.shields.io/badge/go-1a1a1a?style=flat-square&logo=go&logoColor=f4f0e8" />
+  <img alt="node.js"       src="https://img.shields.io/badge/node.js-5e5a54?style=flat-square&logo=nodedotjs&logoColor=f4f0e8" />
+  <img alt="discord.py"    src="https://img.shields.io/badge/discord.py-1a1a1a?style=flat-square&logo=discord&logoColor=f4f0e8" />
+  <img alt="prometheus"    src="https://img.shields.io/badge/prometheus-c24e2c?style=flat-square&logo=prometheus&logoColor=f4f0e8" />
+  <img alt="opentelemetry" src="https://img.shields.io/badge/opentelemetry-5e5a54?style=flat-square&logo=opentelemetry&logoColor=f4f0e8" />
+  <img alt="docker"        src="https://img.shields.io/badge/docker-1a1a1a?style=flat-square&logo=docker&logoColor=f4f0e8" />
+  <img alt="linux"         src="https://img.shields.io/badge/linux-5e5a54?style=flat-square&logo=linux&logoColor=f4f0e8" />
+  <img alt="git"           src="https://img.shields.io/badge/git-c24e2c?style=flat-square&logo=git&logoColor=f4f0e8" />
 </p>
 
-<sub>the short list. the long list is in my shell history.</sub>
+<sub>mostly Python and TypeScript these days.</sub>
 
 <br/>
 
@@ -119,120 +115,18 @@ avoiding  ->  ORMs that hide what the query is doing
 
 ### <sub><code>06 · PROJECTS</code></sub>
 
-<table width="100%" border="0">
-<tr>
-<td valign="top" width="50%">
+**[Rostra](https://github.com/AstorisTheBrave/Rostra)** &nbsp; <sub>`TypeScript`</sub>
 
-**[tcp-echo](https://github.com/AstorisTheBrave/tcp-echo)** &nbsp; <sub>`C`</sub>
+My main project - an all-in-one Discord bot with moderation, security, automod, and tickets in one place. The largest thing I maintain.
 
-Raw TCP echo server using POSIX sockets. No threads, no libraries. The smallest useful thing you can build with `socket` / `bind` / `listen` / `accept`.
+**[argus](https://github.com/AstorisTheBrave/argus)** &nbsp; <sub>`Python`</sub>
 
-</td>
-<td valign="top" width="50%">
-
-**[todo-api](https://github.com/AstorisTheBrave/todo-api)** &nbsp; <sub>`TypeScript`</sub>
-
-REST CRUD API on Node's built-in `http` module. No Express, no Fastify. Manual routing, typed store, streaming body reads.
-
-</td>
-</tr>
-<tr>
-<td valign="top" width="50%">
-
-**[url-shortener](https://github.com/AstorisTheBrave/url-shortener)** &nbsp; <sub>`Go`</sub>
-
-URL shortener in three files. Shorten, redirect, persist slugs to JSON between restarts. `crypto/rand` for unguessable slugs.
-
-</td>
-<td valign="top" width="50%">
-
-**[rate-limiter](https://github.com/AstorisTheBrave/rate-limiter)** &nbsp; <sub>`Go`</sub>
-
-Token bucket rate limiter as a standalone library with `http.Handler` per-IP middleware and unit tests that check refill timing.
-
-</td>
-</tr>
-<tr>
-<td valign="top" width="50%">
-
-**[pubsub-broker](https://github.com/AstorisTheBrave/pubsub-broker)** &nbsp; <sub>`Go`</sub>
-
-TCP pub/sub broker. `SUB` / `PUB` / `UNSUB` over plain text. One goroutine per client, `sync.RWMutex` on the topic map, buffered send channels.
-
-</td>
-<td valign="top" width="50%">
-
-**[authcore-service](https://github.com/AstorisTheBrave/authcore-service)** &nbsp; <sub>`Python`</sub>
-
-Standalone authentication microservice. Registration, login, token issuance and validation pulled out of the app and into their own service.
-
-</td>
-</tr>
-<tr>
-<td valign="top" width="50%">
-
-**[notifyhub](https://github.com/AstorisTheBrave/notifyhub)** &nbsp; <sub>`Python`</sub>
-
-Notification service with queue-based delivery. Producers drop events on the queue, workers handle dispatch. Decoupled by design.
-
-</td>
-<td valign="top" width="50%">
-
-**[pulse-api](https://github.com/AstorisTheBrave/pulse-api)** &nbsp; <sub>`Python`</sub>
-
-Lightweight service health monitoring API. Registers services, runs checks on a schedule, exposes a status endpoint. Small and useful.
-
-</td>
-</tr>
-<tr>
-<td valign="top" width="50%">
-
-**[streamsync](https://github.com/AstorisTheBrave/streamsync)** &nbsp; <sub>`Python`</sub>
-
-Real-time backend with WebSocket support. Handles persistent connections, broadcasts state changes, keeps HTTP and WS under one roof.
-
-</td>
-<td valign="top" width="50%">
-
-**[ledgerlite-api](https://github.com/AstorisTheBrave/ledgerlite-api)** &nbsp; <sub>`Python`</sub>
-
-Personal finance tracker backend. Accounts, transactions, running balances. The kind of domain where getting the data model right matters more than the endpoints.
-
-</td>
-</tr>
-<tr>
-<td valign="top" width="50%">
+Operational metrics for discord.py. It drops into a bot and exports gateway latency, command timings, and cache stats over Prometheus / OpenTelemetry - so you can actually see what the bot is doing.
 
 **[drawing-board](https://github.com/AstorisTheBrave/drawing-board)** &nbsp; <sub>`TypeScript`</sub>
 
-Real-time collaborative drawing board over WebSockets. Shared canvas, multiple clients, every stroke broadcast to the room.
+A small real-time experiment: a shared whiteboard over WebSockets that broadcasts every stroke to everyone in the room.
 
-</td>
-<td valign="top" width="50%">
-
-**[fileflow-api](https://github.com/AstorisTheBrave/fileflow-api)** &nbsp; <sub>`Python`</sub>
-
-File processing backend. Upload, transform, and stream files through a small, predictable API - the unglamorous plumbing of moving bytes.
-
-</td>
-</tr>
-<tr>
-<td valign="top" width="50%">
-
-**[cachelab](https://github.com/AstorisTheBrave/cachelab)** &nbsp; <sub>`Python`</sub>
-
-A bench for caching strategies. Write-through, write-back, and TTL eviction behind one API, so you can watch the hit rate actually move.
-
-</td>
-<td valign="top" width="50%">
-
-**[taskforge-cli](https://github.com/AstorisTheBrave/taskforge-cli)** &nbsp; <sub>`Python`</sub>
-
-Personal productivity CLI. Add, list, and close tasks straight from the terminal. Local-first, no account, no sync.
-
-</td>
-</tr>
-</table>
 <br/>
 
 <!-- ── 07 · quote - rotated weekly by Action ───────────────────────────── -->
