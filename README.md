@@ -134,7 +134,7 @@ A small real-time experiment: a shared whiteboard over WebSockets that broadcast
 ### <sub><code>07 · QUOTE, WEEKLY</code></sub>
 
 <!-- QUOTE:START -->
-> _"The purpose of computing is insight, not numbers."_ - **Richard Hamming**
+> _"The competent programmer is fully aware of the limited size of his own skull."_ - **Edsger W. Dijkstra**
 <!-- QUOTE:END -->
 
 <br/>
