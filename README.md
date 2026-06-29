@@ -134,7 +134,7 @@ A small real-time experiment: a shared whiteboard over WebSockets that broadcast
 ### <sub><code>07 · QUOTE, WEEKLY</code></sub>
 
 <!-- QUOTE:START -->
-> _"The competent programmer is fully aware of the limited size of his own skull."_ - **Edsger W. Dijkstra**
+> _"Premature optimization is the root of all evil."_ - **Donald Knuth**
 <!-- QUOTE:END -->
 
 <br/>
