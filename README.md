@@ -22,7 +22,7 @@
 
 ### <sub><code>01 · ABOUT</code></sub>
 
-I'm **Astoris**. I build backends and Discord bots - right now [**Rostra**](https://github.com/AstorisTheBrave/Rostra), an all-in-one moderation and automod bot, and [**argus**](https://github.com/AstorisTheBrave/argus), which adds Prometheus/OpenTelemetry metrics to discord.py. Mostly Python and TypeScript, with some Go.
+I'm **Astoris**. I build backends and Discord bots - right now [**Rostra**](https://github.com/AstorisTheBrave/Rostra), an all-in-one moderation and automod bot, and [**argus**](https://github.com/AstorisTheBrave/argus), which adds Prometheus/OpenTelemetry metrics to discord.py. Mostly Python and TypeScript, with some Go, deployed on AWS, Cloudflare, and Porter.run.
 
 I care about services that stay up and APIs that are boring to use. Still learning a lot of this as I go.
 
@@ -61,6 +61,8 @@ learning  ->  observability: opentelemetry + prometheus
   <img alt="discord.py"    src="https://img.shields.io/badge/discord.py-1a1a1a?style=flat-square&logo=discord&logoColor=f4f0e8" />
   <img alt="prometheus"    src="https://img.shields.io/badge/prometheus-c24e2c?style=flat-square&logo=prometheus&logoColor=f4f0e8" />
   <img alt="opentelemetry" src="https://img.shields.io/badge/opentelemetry-5e5a54?style=flat-square&logo=opentelemetry&logoColor=f4f0e8" />
+  <img alt="aws"           src="https://img.shields.io/badge/aws-1a1a1a?style=flat-square&logo=amazonaws&logoColor=f4f0e8" />
+  <img alt="cloudflare"    src="https://img.shields.io/badge/cloudflare-c24e2c?style=flat-square&logo=cloudflare&logoColor=f4f0e8" />
   <img alt="docker"        src="https://img.shields.io/badge/docker-1a1a1a?style=flat-square&logo=docker&logoColor=f4f0e8" />
   <img alt="linux"         src="https://img.shields.io/badge/linux-5e5a54?style=flat-square&logo=linux&logoColor=f4f0e8" />
   <img alt="git"           src="https://img.shields.io/badge/git-c24e2c?style=flat-square&logo=git&logoColor=f4f0e8" />
