@@ -136,7 +136,7 @@ A small real-time experiment: a shared whiteboard over WebSockets that broadcast
 ### <sub><code>07 · QUOTE, WEEKLY</code></sub>
 
 <!-- QUOTE:START -->
-> _"Premature optimization is the root of all evil."_ - **Donald Knuth**
+> _"Walking on water and developing software from a specification are easy if both are frozen."_ - **Edward V. Berard**
 <!-- QUOTE:END -->
 
 <br/>
