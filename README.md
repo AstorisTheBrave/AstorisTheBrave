@@ -115,19 +115,23 @@ learning  ->  observability: opentelemetry + prometheus
 
 <!-- ── 06 · projects ───────────────────────────────────────────────────── -->
 
-### <sub><code>06 · PROJECTS</code></sub>
+### <sub><code>06 · FEATURED PROJECTS</code></sub>
+
+**[Aegis](https://github.com/AstorisTheBrave/aegis)** &nbsp; <sub>`TypeScript`</sub>
+
+Self-hosted SaaS access governance: an explainable access graph for identities, entitlements, reviews, evidence, and governed workflows. It is intentionally read-only in v1.
+
+**[URSA](https://github.com/AstorisTheBrave/ursa-android)** &nbsp; <sub>`Kotlin`</sub>
+
+A native, privacy-first Android companion for Uptime Kuma. It delivers real-time monitor status, heartbeat history, and FOSS push notifications without Firebase or a relay.
 
 **[Rostra](https://github.com/AstorisTheBrave/Rostra)** &nbsp; <sub>`TypeScript`</sub>
 
-My main project - an all-in-one Discord bot with moderation, security, automod, and tickets in one place. The largest thing I maintain.
+An all-in-one Discord platform for moderation, server security, automod, tickets, applications, and community features — built as a fast, sharded service.
 
 **[argus](https://github.com/AstorisTheBrave/argus)** &nbsp; <sub>`Python`</sub>
 
-Operational metrics for discord.py. It drops into a bot and exports gateway latency, command timings, and cache stats over Prometheus / OpenTelemetry - so you can actually see what the bot is doing.
-
-**[drawing-board](https://github.com/AstorisTheBrave/drawing-board)** &nbsp; <sub>`TypeScript`</sub>
-
-A small real-time experiment: a shared whiteboard over WebSockets that broadcasts every stroke to everyone in the room.
+Operational Prometheus and OpenTelemetry for discord.py: one-line instrumentation for latency, command timings, gateway health, cache stats, and a live dashboard.
 
 <br/>
 
