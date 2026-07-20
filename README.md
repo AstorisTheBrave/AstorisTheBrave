@@ -140,7 +140,7 @@ Operational Prometheus and OpenTelemetry for discord.py: one-line instrumentatio
 ### <sub><code>07 · QUOTE, WEEKLY</code></sub>
 
 <!-- QUOTE:START -->
-> _"It is practically impossible to teach good programming to students that have had a prior exposure to BASIC."_ - **Edsger W. Dijkstra**
+> _"Controlling complexity is the essence of computer programming."_ - **Brian Kernighan**
 <!-- QUOTE:END -->
 
 <br/>
