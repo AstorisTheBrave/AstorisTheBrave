@@ -140,7 +140,7 @@ Operational Prometheus and OpenTelemetry for discord.py: one-line instrumentatio
 ### <sub><code>07 · QUOTE, WEEKLY</code></sub>
 
 <!-- QUOTE:START -->
-> _"Controlling complexity is the essence of computer programming."_ - **Brian Kernighan**
+> _"Make it work, make it right, make it fast."_ - **Kent Beck**
 <!-- QUOTE:END -->
 
 <br/>
