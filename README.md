@@ -140,7 +140,7 @@ Operational Prometheus and OpenTelemetry for discord.py: one-line instrumentatio
 ### <sub><code>07 · QUOTE, WEEKLY</code></sub>
 
 <!-- QUOTE:START -->
-> _"Make it work, make it right, make it fast."_ - **Kent Beck**
+> _"Programs must be written for people to read, and only incidentally for machines to execute."_ - **Harold Abelson**
 <!-- QUOTE:END -->
 
 <br/>
