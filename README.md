@@ -140,7 +140,7 @@ Operational Prometheus and OpenTelemetry for discord.py: one-line instrumentatio
 ### <sub><code>07 · QUOTE, WEEKLY</code></sub>
 
 <!-- QUOTE:START -->
-> _"Programs must be written for people to read, and only incidentally for machines to execute."_ - **Harold Abelson**
+> _"Any fool can write code that a computer can understand. Good programmers write code that humans can understand."_ - **Martin Fowler**
 <!-- QUOTE:END -->
 
 <br/>
