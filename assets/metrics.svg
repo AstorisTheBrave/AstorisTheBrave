@@ -1809,10 +1809,10 @@ h2, .title { color: #c24e2c !important; }
                                 <path fill="#30a14e" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,3.970149253731343 0,2.970149253731343 z"/>
                                 <path fill="#30a14e" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,2.970149253731343 1.7,3.970149253731343 z"/>
                             </g>
-                            <g transform="translate(-8.5, 8.850746268656717)">
+                            <g transform="translate(-8.5, 8.895522388059701)">
                                 <path fill="#30a14e" d="M1.7,2 0,1 1.7,0 3.4,1 z"/>
-                                <path fill="#30a14e" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,4.149253731343284 0,3.1492537313432836 z"/>
-                                <path fill="#30a14e" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,3.1492537313432836 1.7,4.149253731343284 z"/>
+                                <path fill="#30a14e" filter="url(#brightness1)" d="M0,1 1.7,2 1.7,4.104477611940299 0,3.1044776119402986 z"/>
+                                <path fill="#30a14e" filter="url(#brightness2)" d="M1.7,2 3.4,1 3.4,3.1044776119402986 1.7,4.104477611940299 z"/>
                             </g>
                             <g transform="translate(-10.2, 9.940298507462686)">
                                 <path fill="#30a14e" d="M1.7,2 0,1 1.7,0 3.4,1 z"/>
