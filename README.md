@@ -140,7 +140,7 @@ Operational Prometheus and OpenTelemetry for discord.py: one-line instrumentatio
 ### <sub><code>07 · QUOTE, WEEKLY</code></sub>
 
 <!-- QUOTE:START -->
-> _"A ship in port is safe, but that's not what ships are built for."_ - **Grace Hopper**
+> _"The database is not the enemy. Ignoring it is."_ - **Astoris**
 <!-- QUOTE:END -->
 
 <br/>
