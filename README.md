@@ -140,7 +140,7 @@ Operational Prometheus and OpenTelemetry for discord.py: one-line instrumentatio
 ### <sub><code>07 · QUOTE, WEEKLY</code></sub>
 
 <!-- QUOTE:START -->
-> _"The database is not the enemy. Ignoring it is."_ - **Astoris**
+> _"Simplicity is prerequisite for reliability."_ - **Edsger W. Dijkstra**
 <!-- QUOTE:END -->
 
 <br/>
