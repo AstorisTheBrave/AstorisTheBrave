@@ -140,7 +140,7 @@ Operational Prometheus and OpenTelemetry for discord.py: one-line instrumentatio
 ### <sub><code>07 · QUOTE, WEEKLY</code></sub>
 
 <!-- QUOTE:START -->
-> _"Simplicity is prerequisite for reliability."_ - **Edsger W. Dijkstra**
+> _"The purpose of computing is insight, not numbers."_ - **Richard Hamming**
 <!-- QUOTE:END -->
 
 <br/>
