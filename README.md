@@ -140,7 +140,7 @@ Operational Prometheus and OpenTelemetry for discord.py: one-line instrumentatio
 ### <sub><code>07 · QUOTE, WEEKLY</code></sub>
 
 <!-- QUOTE:START -->
-> _"The purpose of computing is insight, not numbers."_ - **Richard Hamming**
+> _"The competent programmer is fully aware of the limited size of his own skull."_ - **Edsger W. Dijkstra**
 <!-- QUOTE:END -->
 
 <br/>
