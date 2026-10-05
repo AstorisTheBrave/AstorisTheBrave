@@ -140,7 +140,7 @@ Operational Prometheus and OpenTelemetry for discord.py: one-line instrumentatio
 ### <sub><code>07 · QUOTE, WEEKLY</code></sub>
 
 <!-- QUOTE:START -->
-> _"Walking on water and developing software from a specification are easy if both are frozen."_ - **Edward V. Berard**
+> _"It is practically impossible to teach good programming to students that have had a prior exposure to BASIC."_ - **Edsger W. Dijkstra**
 <!-- QUOTE:END -->
 
 <br/>
