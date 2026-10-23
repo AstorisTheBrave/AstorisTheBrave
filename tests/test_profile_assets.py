@@ -163,6 +163,10 @@ def test_empty_totals_render_an_accessible_empty_state() -> None:
     assert "No public language data available" in svg
     child_names = {child.tag.rsplit("}", 1)[-1] for child in root}
     assert {"title", "desc"} <= child_names
+    element_ids = [
+        element.attrib["id"] for element in root.iter() if "id" in element.attrib
+    ]
+    assert len(element_ids) == len(set(element_ids))
 
 
 def test_cli_writes_light_and_dark_svg(tmp_path: Path) -> None:

@@ -219,7 +219,7 @@ def render_language_svg(entries: Sequence[LanguageShare], theme: Theme) -> str:
         ".meta{font-size:11px;letter-spacing:.14em;text-transform:uppercase}",
         "</style>",
         f'<rect width="{width}" height="{height}" rx="10" fill="{theme.background}"/>',
-        f'<text id="title" x="{padding}" y="34" class="mono meta" '
+        f'<text x="{padding}" y="34" class="mono meta" '
         f'fill="{theme.accent}" font-weight="700">signal / languages</text>',
         f'<text x="{padding}" y="54" class="mono label" fill="{theme.muted}">'
         "public, owned repositories · bytes, not proficiency</text>",
