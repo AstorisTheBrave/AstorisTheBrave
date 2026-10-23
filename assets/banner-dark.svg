@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="900" height="280" role="img" aria-labelledby="title desc">
+  <title id="title">Astoris - backend engineer growing into Site Reliability Engineering</title>
+  <desc id="desc">A dark operator's field-note banner showing the reliability loop: observe, define, automate, learn.</desc>
+  <style>
+    .mono{font-family:ui-monospace,'Cascadia Code','Fira Mono',monospace}
+    .serif{font-family:Georgia,'Times New Roman',serif}
+    .paper{fill:#07070a}.ink{fill:#ece7dc}.muted{fill:#a8a49b}.faded{fill:#6b6760}.rust{fill:#e27a52}
+    .rule{stroke:#2a2724;fill:none}.signal{stroke:#e27a52;fill:none}
+    .kicker{font-size:11px;letter-spacing:.2em}.display{font-size:43px;letter-spacing:-.02em}.copy{font-size:13px}.step{font-size:11px;letter-spacing:.12em}
+    .reveal{animation:reveal .8s ease-out both}.pulse{animation:pulse 2.6s ease-in-out infinite}
+    @keyframes reveal{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+    @keyframes pulse{0%,100%{opacity:.35}50%{opacity:1}}
+    @media (prefers-reduced-motion:reduce){.reveal,.pulse{animation:none!important}}
+  </style>
+  <rect class="paper" width="900" height="280" rx="10"/>
+  <path class="rule" d="M28 28h20M28 28v20M872 28h-20M872 28v20M28 252h20M28 252v-20M872 252h-20M872 252v-20"/>
+  <text x="48" y="50" class="mono faded kicker">ASTORIS / RELIABILITY FIELD NOTES / 2026</text>
+  <g class="reveal">
+    <text x="48" y="112" class="serif ink display">Backend engineer,</text>
+    <text x="48" y="158" class="serif ink display">following the signals toward SRE.</text>
+  </g>
+  <circle cx="826" cy="124" r="30" class="rule"/>
+  <circle cx="826" cy="124" r="6" class="rust pulse"/>
+  <text x="826" y="169" text-anchor="middle" class="mono faded step">SIGNAL / LIVE</text>
+  <line x1="48" y1="198" x2="852" y2="198" class="rule"/>
+  <line x1="80" y1="230" x2="820" y2="230" class="signal" stroke-dasharray="3 8"/>
+  <g class="mono step">
+    <circle cx="80" cy="230" r="5" class="rust"/><text x="80" y="255" text-anchor="middle" class="ink">OBSERVE</text>
+    <circle cx="327" cy="230" r="5" class="rust"/><text x="327" y="255" text-anchor="middle" class="ink">DEFINE</text>
+    <circle cx="573" cy="230" r="5" class="rust"/><text x="573" y="255" text-anchor="middle" class="ink">AUTOMATE</text>
+    <circle cx="820" cy="230" r="5" class="rust"/><text x="820" y="255" text-anchor="middle" class="ink">LEARN</text>
+  </g>
+</svg>

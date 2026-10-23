@@ -3,10 +3,13 @@ from __future__ import annotations
 import re
 from pathlib import Path
 
-import pytest
-
 ROOT = Path(__file__).parents[1]
 README = ROOT / "README.md"
+ROLE_LINE = "Backend engineer growing into Site Reliability Engineering."
+SUPPORTING_LINE = (
+    "I build observable services, automate the repetitive parts, "
+    "and learn by operating real systems."
+)
 
 
 def read_readme() -> str:
@@ -41,12 +44,10 @@ def test_all_readme_images_have_alt_text() -> None:
     assert all(re.search(r'alt="[^"\s][^"]*"', image) for image in images)
 
 
-@pytest.mark.xfail(reason="Task 3 replaces the private case-study link", strict=True)
 def test_private_aegis_is_not_linked() -> None:
     assert "github.com/AstorisTheBrave/aegis" not in read_readme()
 
 
-@pytest.mark.xfail(reason="Task 3 replaces the fixed UTC offset", strict=True)
 def test_timezone_copy_is_dst_safe() -> None:
     markdown = read_readme()
 
@@ -54,7 +55,6 @@ def test_timezone_copy_is_dst_safe() -> None:
     assert "UK time" in markdown
 
 
-@pytest.mark.xfail(reason="Task 3 moves generated assets to output", strict=True)
 def test_generated_assets_are_not_embedded_from_main() -> None:
     markdown = read_readme()
     output_root = (
@@ -66,3 +66,79 @@ def test_generated_assets_are_not_embedded_from_main() -> None:
     assert "./assets/languages" not in markdown
     assert f"{output_root}languages.svg" in markdown
     assert f"{output_root}languages-dark.svg" in markdown
+
+
+def test_positioning_and_sections_are_sre_first() -> None:
+    markdown = read_readme()
+    headings = [
+        "01 · CURRENT SIGNAL",
+        "02 · RELIABILITY IN PRACTICE",
+        "03 · OPERATIONAL TOOLKIT",
+        "04 · LEARNING NEXT",
+        "05 · OPEN SOURCE SIGNAL",
+        "06 · CONTACT",
+    ]
+
+    assert ROLE_LINE in markdown
+    assert SUPPORTING_LINE in markdown
+    positions = [markdown.index(heading) for heading in headings]
+    assert positions == sorted(positions)
+    for stage in ("observe", "define", "automate", "learn"):
+        assert stage in markdown.casefold()
+
+
+def test_ursa_is_the_only_completed_case_study() -> None:
+    markdown = read_readme()
+    start = markdown.index("02 · RELIABILITY IN PRACTICE")
+    end = markdown.index("03 · OPERATIONAL TOOLKIT")
+    completed = markdown[start:end].casefold()
+
+    assert "https://github.com/greyfoundry/ursa-android" in completed
+    assert "ursa" in completed
+    for unfinished in ("argus", "rostra", "elah", "aegis"):
+        assert unfinished not in completed
+
+
+def test_in_progress_work_is_labeled_inside_now() -> None:
+    markdown = read_readme()
+    start = markdown.index("<!-- NOW:START -->")
+    end = markdown.index("<!-- NOW:END -->")
+    now = markdown[start:end].casefold()
+
+    assert "building" in now or "working on" in now
+    assert "argus" in now
+    assert "rostra" in now
+
+
+def test_learning_is_separate_from_tools_in_practice() -> None:
+    markdown = read_readme()
+    toolkit_start = markdown.index("03 · OPERATIONAL TOOLKIT")
+    learning_start = markdown.index("04 · LEARNING NEXT")
+    signal_start = markdown.index("05 · OPEN SOURCE SIGNAL")
+    learning = markdown[learning_start:signal_start]
+    normalized_learning = learning.casefold()
+
+    assert toolkit_start < learning_start
+    for topic in ("SLIs", "SLOs", "error budgets", "infrastructure as code"):
+        assert topic.casefold() in normalized_learning
+
+
+def test_vanity_and_tracking_features_are_removed() -> None:
+    markdown = read_readme()
+
+    for stale in ("komarev.com", "QUOTE:START", "STATS, LIVE", "github metrics"):
+        assert stale not in markdown
+    assert markdown.count("<details>") <= 2
+
+
+def test_identity_assets_have_light_dark_and_reduced_motion_variants() -> None:
+    markdown = read_readme()
+    for stem in ("banner", "whoami"):
+        light = ROOT / "assets" / f"{stem}.svg"
+        dark = ROOT / "assets" / f"{stem}-dark.svg"
+        assert light.exists()
+        assert dark.exists()
+        assert f'./assets/{stem}.svg' in markdown
+        assert f'./assets/{stem}-dark.svg' in markdown
+        assert "prefers-reduced-motion" in light.read_text(encoding="utf-8")
+        assert "prefers-reduced-motion" in dark.read_text(encoding="utf-8")
