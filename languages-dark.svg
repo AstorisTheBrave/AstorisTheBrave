@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="246" viewBox="0 0 760 246" role="img" aria-labelledby="title description">
+<title id="title">Languages across public repositories</title>
+<desc id="description">Share of detected language bytes across public, owned repositories.</desc>
+<style>
+.mono{font-family:ui-monospace,Cascadia Code,Fira Mono,monospace}
+.label{font-size:13px}
+.meta{font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+</style>
+<rect width="760" height="246" rx="10" fill="#07070a"/>
+<text x="28" y="34" class="mono meta" fill="#e27a52" font-weight="700">signal / languages</text>
+<text x="28" y="54" class="mono label" fill="#a8a49b">public, owned repositories · bytes, not proficiency</text>
+<rect x="28" y="70" width="704" height="12" rx="6" fill="#1f1d1a"/>
+<clipPath id="bar"><rect x="28" y="70" width="704" height="12" rx="6"/></clipPath>
+<g clip-path="url(#bar)">
+<rect x="28.00" y="70" width="322.75" height="12" fill="#3178c6"/>
+<rect x="350.75" y="70" width="285.35" height="12" fill="#3572a5"/>
+<rect x="636.10" y="70" width="58.00" height="12" fill="#f1e05a"/>
+<rect x="694.10" y="70" width="16.31" height="12" fill="#663399"/>
+<rect x="710.41" y="70" width="11.52" height="12" fill="#fcb32c"/>
+<rect x="721.93" y="70" width="4.50" height="12" fill="#e34c26"/>
+<rect x="726.43" y="70" width="3.40" height="12" fill="#00add8"/>
+<rect x="729.83" y="70" width="1.21" height="12" fill="#384d54"/>
+<rect x="731.04" y="70" width="0.96" height="12" fill="#928d84"/>
+</g>
+<circle cx="33.0" cy="108.0" r="5" fill="#3178c6"/>
+<text x="46.0" y="112.0" class="mono label" fill="#ece7dc">TypeScript <tspan fill="#a8a49b">45.8%</tspan></text>
+<circle cx="385.0" cy="108.0" r="5" fill="#3572a5"/>
+<text x="398.0" y="112.0" class="mono label" fill="#ece7dc">Python <tspan fill="#a8a49b">40.5%</tspan></text>
+<circle cx="33.0" cy="132.0" r="5" fill="#f1e05a"/>
+<text x="46.0" y="136.0" class="mono label" fill="#ece7dc">JavaScript <tspan fill="#a8a49b">8.2%</tspan></text>
+<circle cx="385.0" cy="132.0" r="5" fill="#663399"/>
+<text x="398.0" y="136.0" class="mono label" fill="#ece7dc">CSS <tspan fill="#a8a49b">2.3%</tspan></text>
+<circle cx="33.0" cy="156.0" r="5" fill="#fcb32c"/>
+<text x="46.0" y="160.0" class="mono label" fill="#ece7dc">MDX <tspan fill="#a8a49b">1.6%</tspan></text>
+<circle cx="385.0" cy="156.0" r="5" fill="#e34c26"/>
+<text x="398.0" y="160.0" class="mono label" fill="#ece7dc">HTML <tspan fill="#a8a49b">0.6%</tspan></text>
+<circle cx="33.0" cy="180.0" r="5" fill="#00add8"/>
+<text x="46.0" y="184.0" class="mono label" fill="#ece7dc">Go <tspan fill="#a8a49b">0.5%</tspan></text>
+<circle cx="385.0" cy="180.0" r="5" fill="#384d54"/>
+<text x="398.0" y="184.0" class="mono label" fill="#ece7dc">Dockerfile <tspan fill="#a8a49b">0.2%</tspan></text>
+<circle cx="33.0" cy="204.0" r="5" fill="#928d84"/>
+<text x="46.0" y="208.0" class="mono label" fill="#ece7dc">Other <tspan fill="#a8a49b">0.1%</tspan></text>
+</svg>
