@@ -5,6 +5,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).parents[1]
 README = ROOT / "README.md"
+MAINTAINING = ROOT / "MAINTAINING.md"
 ROLE_LINE = "Backend engineer growing into Site Reliability Engineering."
 SUPPORTING_LINE = (
     "I build observable services, automate the repetitive parts, "
@@ -144,3 +145,32 @@ def test_identity_assets_have_light_dark_and_reduced_motion_variants() -> None:
         assert f'./assets/{stem}-dark.svg' in markdown
         assert "prefers-reduced-motion" in light.read_text(encoding="utf-8")
         assert "prefers-reduced-motion" in dark.read_text(encoding="utf-8")
+
+
+def test_maintenance_runbook_covers_the_profile_lifecycle() -> None:
+    runbook = MAINTAINING.read_text(encoding="utf-8")
+
+    for required in (
+        "<!-- NOW:START -->",
+        "Python 3.15.1",
+        "uv 0.13.5",
+        "uv sync --locked --dev",
+        "uv run ruff check .",
+        "uv run pytest -q",
+        "profile-assets.yml",
+        "METRICS_TOKEN",
+        "output",
+        "rollback",
+    ):
+        assert required.casefold() in runbook.casefold()
+    assert not (ROOT / "SETUP.md").exists()
+
+
+def test_agent_guidance_preserves_generated_asset_boundaries() -> None:
+    guidance = (ROOT / "CLAUDE.md").read_text(encoding="utf-8")
+
+    assert "metrics" in guidance.casefold()
+    assert "languages" in guidance.casefold()
+    assert "output" in guidance.casefold()
+    assert ".github/scripts/render_languages.py" not in guidance
+    assert ".github/workflows/snake.yml" not in guidance
