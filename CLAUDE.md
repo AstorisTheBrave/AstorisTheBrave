@@ -13,10 +13,10 @@ Project memory for agent sessions on this repository.
 - This is the GitHub **profile README** repo (`AstorisTheBrave/AstorisTheBrave`),
   rendered at <https://github.com/AstorisTheBrave>.
 - `main` owns the README, hand-authored identity SVGs, tests, and generators.
-- `output` owns generated light/dark metrics, languages, and contribution SVGs.
-  `.github/workflows/profile-assets.yml` is the only workflow allowed to write.
-- Metrics and languages are critical profile signals. Keep both visible; change
-  their content or presentation only with explicit user approval.
+- `output` owns generated light/dark metrics, languages, quote, and contribution
+  SVGs. Only the two publishing workflows may write there.
+- Metrics, languages, and the daily quote are critical profile signals. Keep all
+  three visible; change their content or presentation only with explicit approval.
 - `tools/profile_assets.py` aggregates language bytes across public repositories.
   The pinned metrics action renders account context and the full-year calendar.
 - URSA is the only mature/complete case study. Keep other projects explicitly in

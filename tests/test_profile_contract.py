@@ -69,6 +69,8 @@ def test_generated_metrics_and_languages_are_embedded_from_output() -> None:
     assert f"{output_root}metrics-dark.svg" in markdown
     assert f"{output_root}languages.svg" in markdown
     assert f"{output_root}languages-dark.svg" in markdown
+    assert f"{output_root}quote.svg" in markdown
+    assert f"{output_root}quote-dark.svg" in markdown
 
 
 def test_positioning_and_sections_are_sre_first() -> None:
@@ -79,7 +81,8 @@ def test_positioning_and_sections_are_sre_first() -> None:
         "03 · OPERATIONAL TOOLKIT",
         "04 · LEARNING NEXT",
         "05 · OPEN SOURCE SIGNAL",
-        "06 · CONTACT",
+        "06 · QUOTE OF THE DAY",
+        "07 · CONTACT",
     ]
 
     assert ROLE_LINE in markdown
@@ -158,6 +161,7 @@ def test_maintenance_runbook_covers_the_profile_lifecycle() -> None:
         "uv run ruff check .",
         "uv run pytest -q",
         "profile-assets.yml",
+        "daily-quote.yml",
         "METRICS_TOKEN",
         "output",
         "rollback",
@@ -171,6 +175,7 @@ def test_agent_guidance_preserves_generated_asset_boundaries() -> None:
 
     assert "metrics" in guidance.casefold()
     assert "languages" in guidance.casefold()
+    assert "daily quote" in guidance.casefold()
     assert "output" in guidance.casefold()
     assert ".github/scripts/render_languages.py" not in guidance
     assert ".github/workflows/snake.yml" not in guidance

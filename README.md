@@ -119,7 +119,20 @@ A native, privacy-first Android companion for Uptime Kuma. URSA turns service he
 
 <br />
 
-### <sub><code>06 · CONTACT</code></sub>
+### <sub><code>06 · QUOTE OF THE DAY</code></sub>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AstorisTheBrave/AstorisTheBrave/output/quote-dark.svg" />
+    <img alt="Engineering quote of the day, rotated at midnight UK time" src="https://raw.githubusercontent.com/AstorisTheBrave/AstorisTheBrave/output/quote.svg" width="760" />
+  </picture>
+</p>
+
+<sub>A deterministic daily note from a small curated set - no page-view API call.</sub>
+
+<br />
+
+### <sub><code>07 · CONTACT</code></sub>
 
 I am working toward an SRE role and I am especially interested in observability, service ownership, automation, and the calm engineering that makes systems easier to operate.
 

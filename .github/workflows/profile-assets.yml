@@ -9,7 +9,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: profile-assets
+  group: generated-output
   cancel-in-progress: false
 
 jobs:

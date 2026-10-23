@@ -50,6 +50,6 @@ jobs:
           args: >-
             --no-progress
             --max-retries 3
-            --exclude '^https://raw\.githubusercontent\.com/AstorisTheBrave/AstorisTheBrave/output/(metrics|languages)'
+            --exclude '^https://raw\.githubusercontent\.com/AstorisTheBrave/AstorisTheBrave/output/(metrics|languages|quote)'
             README.md
 

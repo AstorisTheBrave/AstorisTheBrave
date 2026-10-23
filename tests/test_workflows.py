@@ -63,7 +63,7 @@ def test_publish_job_is_only_writer() -> None:
             if job.get("permissions", {}).get("contents") == "write":
                 writers.append(f"{path.name}: {name}")
 
-    assert writers == ["profile-assets.yml: publish"]
+    assert writers == ["daily-quote.yml: publish", "profile-assets.yml: publish"]
 
 
 def test_asset_schedule_is_daily() -> None:
@@ -72,6 +72,20 @@ def test_asset_schedule_is_daily() -> None:
 
     assert triggers["schedule"] == [{"cron": "17 4 * * *"}]
     assert "workflow_dispatch" in triggers
+
+
+def test_quote_schedule_is_midnight_uk_time() -> None:
+    workflow = load_yaml(WORKFLOWS / "daily-quote.yml")
+    triggers = workflow["on"]
+
+    assert triggers["schedule"] == [
+        {"cron": "0 0 * * *", "timezone": "Europe/London"}
+    ]
+    assert "workflow_dispatch" in triggers
+    source = (WORKFLOWS / "daily-quote.yml").read_text(encoding="utf-8")
+    assert "quote.svg" in source
+    assert "quote-dark.svg" in source
+    assert "git push origin output" in source
 
 
 def test_main_is_not_a_publish_target() -> None:

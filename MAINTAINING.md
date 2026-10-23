@@ -1,8 +1,8 @@
 # Maintaining the profile
 
 This repository renders the public profile for `AstorisTheBrave`. `main` owns the
-hand-authored profile and tooling; `output` owns generated metrics, language, and
-contribution SVGs.
+hand-authored profile and tooling; `output` owns generated metrics, language,
+quote, and contribution SVGs.
 
 ## Toolchain and checks
 
@@ -44,6 +44,13 @@ gh workflow run profile-assets.yml --ref main
 
 It renders `metrics*.svg`, `languages*.svg`, and `github-snake*.svg`, then commits
 them only to `output`. Never commit those generated files to `main`.
+
+`.github/workflows/daily-quote.yml` refreshes `quote*.svg` every day at midnight
+in `Europe/London`. Dispatch it manually with:
+
+```sh
+gh workflow run daily-quote.yml --ref main
+```
 
 The built-in token covers public data. An optional repository Actions secret named
 `METRICS_TOKEN` can supply broader account data; use only the minimum read scopes
