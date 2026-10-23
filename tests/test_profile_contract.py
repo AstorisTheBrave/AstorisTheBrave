@@ -55,7 +55,7 @@ def test_timezone_copy_is_dst_safe() -> None:
     assert "UK time" in markdown
 
 
-def test_generated_assets_are_not_embedded_from_main() -> None:
+def test_generated_metrics_and_languages_are_embedded_from_output() -> None:
     markdown = read_readme()
     output_root = (
         "https://raw.githubusercontent.com/"
@@ -64,6 +64,8 @@ def test_generated_assets_are_not_embedded_from_main() -> None:
 
     assert "./assets/metrics" not in markdown
     assert "./assets/languages" not in markdown
+    assert f"{output_root}metrics.svg" in markdown
+    assert f"{output_root}metrics-dark.svg" in markdown
     assert f"{output_root}languages.svg" in markdown
     assert f"{output_root}languages-dark.svg" in markdown
 
@@ -126,7 +128,7 @@ def test_learning_is_separate_from_tools_in_practice() -> None:
 def test_vanity_and_tracking_features_are_removed() -> None:
     markdown = read_readme()
 
-    for stale in ("komarev.com", "QUOTE:START", "STATS, LIVE", "github metrics"):
+    for stale in ("komarev.com", "QUOTE:START", "STATS, LIVE"):
         assert stale not in markdown
     assert markdown.count("<details>") <= 2
 

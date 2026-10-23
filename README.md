@@ -84,6 +84,19 @@ A native, privacy-first Android companion for Uptime Kuma. URSA turns service he
 
 ### <sub><code>05 · OPEN SOURCE SIGNAL</code></sub>
 
+#### GitHub metrics
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AstorisTheBrave/AstorisTheBrave/output/metrics-dark.svg" />
+    <img alt="GitHub account metrics and a full-year contribution calendar for Astoris" src="https://raw.githubusercontent.com/AstorisTheBrave/AstorisTheBrave/output/metrics.svg" width="760" />
+  </picture>
+</p>
+
+<sub>The metrics card is generated once a day and published as a static snapshot.</sub>
+
+#### Languages across public work
+
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AstorisTheBrave/AstorisTheBrave/output/languages-dark.svg" />

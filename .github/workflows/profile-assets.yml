@@ -1,0 +1,109 @@
+name: profile-assets
+
+on:
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: profile-assets
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - name: Check out profile source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          path: source
+
+      - name: Check out generated output
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: output
+          path: public
+
+      - name: Set up Python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version-file: source/.python-version
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e # v10.3.2
+        with:
+          version: "0.13.5"
+          enable-cache: true
+
+      - name: Install locked dependencies
+        working-directory: source
+        run: uv sync --locked --dev
+
+      - name: Render language cards
+        working-directory: source
+        env:
+          GH_TOKEN: ${{ secrets.METRICS_TOKEN || github.token }}
+        run: uv run python -m tools.profile_assets --output-dir ../public
+
+      - name: Render GitHub metrics (light)
+        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN || github.token }}
+          user: ${{ github.repository_owner }}
+          filename: metrics.svg
+          output_action: none
+          config_timezone: Europe/London
+          base: header
+          base_indepth: no
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+          extras_css: |
+            .background { fill: #f4f0e8 !important; }
+            body, .field, .value, .legend, text { color: #1a1a1a !important; }
+            h2, .title { color: #c24e2c !important; }
+            .calendar-graph text { fill: #5e5a54 !important; }
+
+      - name: Render GitHub metrics (dark)
+        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN || github.token }}
+          user: ${{ github.repository_owner }}
+          filename: metrics-dark.svg
+          output_action: none
+          config_timezone: Europe/London
+          base: header
+          base_indepth: no
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+          extras_css: |
+            .background { fill: #07070a !important; }
+            body, .field, .value, .legend, text { color: #ece7dc !important; }
+            h2, .title { color: #e27a52 !important; }
+            .calendar-graph text { fill: #a8a49b !important; }
+
+      - name: Move rendered metrics into output checkout
+        run: sudo mv /metrics_renders/metrics*.svg public/
+
+      - name: Render contribution snake
+        uses: Platane/snk@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3.5.0
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            public/github-snake.svg
+            public/github-snake-dark.svg?palette=github-dark&color_snake=#e27a52&color_dots=#1f1d1a,#5e5a54,#928d84,#c24e2c,#e27a52
+
+      - name: Publish changed assets to output only
+        working-directory: public
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add metrics.svg metrics-dark.svg languages.svg languages-dark.svg github-snake.svg github-snake-dark.svg
+          git diff --staged --quiet || git commit -m "chore(profile): refresh generated assets"
+          git push origin output
+
