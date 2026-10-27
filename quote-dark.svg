@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="760" height="220" viewBox="0 0 760 220" role="img" aria-labelledby="quote-title quote-description">
 <title id="quote-title">Quote of the day</title>
-<desc id="quote-description">A ship in port is safe, but that&#x27;s not what ships are built for. - Grace Hopper</desc>
+<desc id="quote-description">The database is not the enemy. Ignoring it is. - Astoris</desc>
 <style>
 .mono{font-family:ui-monospace,Cascadia Code,Fira Mono,monospace}
 .quote{font-family:Georgia,serif;font-size:22px;font-style:italic}
@@ -9,6 +9,6 @@
 <rect width="760" height="220" rx="10" fill="#07070a"/>
 <rect x="24" y="24" width="4" height="172" rx="2" fill="#e27a52"/>
 <text x="36" y="48" class="mono meta" fill="#e27a52" font-weight="700">daily note / rotate at 00:00 UK</text>
-<text x="36" y="88" class="quote" fill="#ece7dc">A ship in port is safe, but that&#x27;s not what ships are built for.</text>
-<text x="36" y="138" class="mono" font-size="13" fill="#a8a49b">- Grace Hopper</text>
+<text x="36" y="88" class="quote" fill="#ece7dc">The database is not the enemy. Ignoring it is.</text>
+<text x="36" y="138" class="mono" font-size="13" fill="#a8a49b">- Astoris</text>
 </svg>
