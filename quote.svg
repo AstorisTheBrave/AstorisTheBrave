@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="760" height="220" viewBox="0 0 760 220" role="img" aria-labelledby="quote-title quote-description">
 <title id="quote-title">Quote of the day</title>
-<desc id="quote-description">The competent programmer is fully aware of the limited size of his own skull. - Edsger W. Dijkstra</desc>
+<desc id="quote-description">Premature optimization is the root of all evil. - Donald Knuth</desc>
 <style>
 .mono{font-family:ui-monospace,Cascadia Code,Fira Mono,monospace}
 .quote{font-family:Georgia,serif;font-size:22px;font-style:italic}
@@ -9,7 +9,6 @@
 <rect width="760" height="220" rx="10" fill="#f4f0e8"/>
 <rect x="24" y="24" width="4" height="172" rx="2" fill="#c24e2c"/>
 <text x="36" y="48" class="mono meta" fill="#c24e2c" font-weight="700">daily note / rotate at 00:00 UK</text>
-<text x="36" y="88" class="quote" fill="#1a1a1a">The competent programmer is fully aware of the limited size of his own</text>
-<text x="36" y="118" class="quote" fill="#1a1a1a">skull.</text>
-<text x="36" y="168" class="mono" font-size="13" fill="#5e5a54">- Edsger W. Dijkstra</text>
+<text x="36" y="88" class="quote" fill="#1a1a1a">Premature optimization is the root of all evil.</text>
+<text x="36" y="138" class="mono" font-size="13" fill="#5e5a54">- Donald Knuth</text>
 </svg>
