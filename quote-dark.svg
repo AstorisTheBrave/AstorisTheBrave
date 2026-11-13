@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="760" height="220" viewBox="0 0 760 220" role="img" aria-labelledby="quote-title quote-description">
 <title id="quote-title">Quote of the day</title>
-<desc id="quote-description">Premature optimization is the root of all evil. - Donald Knuth</desc>
+<desc id="quote-description">Walking on water and developing software from a specification are easy if both are frozen. - Edward V. Berard</desc>
 <style>
 .mono{font-family:ui-monospace,Cascadia Code,Fira Mono,monospace}
 .quote{font-family:Georgia,serif;font-size:22px;font-style:italic}
@@ -9,6 +9,7 @@
 <rect width="760" height="220" rx="10" fill="#07070a"/>
 <rect x="24" y="24" width="4" height="172" rx="2" fill="#e27a52"/>
 <text x="36" y="48" class="mono meta" fill="#e27a52" font-weight="700">daily note / rotate at 00:00 UK</text>
-<text x="36" y="88" class="quote" fill="#ece7dc">Premature optimization is the root of all evil.</text>
-<text x="36" y="138" class="mono" font-size="13" fill="#a8a49b">- Donald Knuth</text>
+<text x="36" y="88" class="quote" fill="#ece7dc">Walking on water and developing software from a specification are easy</text>
+<text x="36" y="118" class="quote" fill="#ece7dc">if both are frozen.</text>
+<text x="36" y="168" class="mono" font-size="13" fill="#a8a49b">- Edward V. Berard</text>
 </svg>
